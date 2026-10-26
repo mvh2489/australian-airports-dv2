@@ -1,0 +1,154 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": "container",
+  "height": 350,
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
+  "config": {
+    "background": "transparent",
+    "font": "Arial",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelColor": "#516b79",
+      "titleColor": "#193c52",
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titlePadding": 12,
+      "gridColor": "#e3ecef",
+      "domain": false,
+      "tickColor": "#e3ecef",
+      "labelPadding": 6
+    },
+    "legend": {
+      "labelColor": "#516b79",
+      "titleColor": "#193c52",
+      "labelFontSize": 11,
+      "titleFontSize": 12,
+      "titlePadding": 8,
+      "titleLimit": 450,
+      "labelLimit": 200,
+      "padding": 10,
+      "orient": "bottom"
+    },
+    "title": {
+      "anchor": "start",
+      "fontSize": 15,
+      "color": "#193c52",
+      "fontWeight": 600
+    },
+    "text": {
+      "font": "Arial",
+      "color": "#193c52"
+    }
+  },
+  "data": {
+    "url": "data/recovery.json"
+  },
+  "encoding": {
+    "y": {
+      "field": "airport",
+      "type": "nominal",
+      "title": null,
+      "sort": {
+        "field": "passengers_2025",
+        "order": "descending"
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "rule",
+        "stroke": "#b7c8ce",
+        "strokeWidth": 2.5
+      },
+      "encoding": {
+        "x": {
+          "field": "passengers_2019",
+          "type": "quantitative",
+          "title": "Domestic + international passenger movements",
+          "axis": {
+            "format": ".2s",
+            "tickCount": 5
+          },
+          "scale": {
+            "domain": [
+              0,
+              48000000
+            ]
+          }
+        },
+        "x2": {
+          "field": "passengers_2025"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "fold": [
+            "passengers_2019",
+            "passengers_2025"
+          ],
+          "as": [
+            "period",
+            "passengers"
+          ]
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 70
+      },
+      "encoding": {
+        "x": {
+          "field": "passengers",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "period",
+          "type": "nominal",
+          "title": null,
+          "scale": {
+            "domain": [
+              "passengers_2019",
+              "passengers_2025"
+            ],
+            "range": [
+              "#91a0aa",
+              "#2678a8"
+            ]
+          },
+          "legend": {
+            "labelExpr": "datum.label == 'passengers_2019' ? '2018-19' : '2024-25'"
+          }
+        },
+        "tooltip": [
+          {
+            "field": "airport",
+            "title": "Airport"
+          },
+          {
+            "field": "period",
+            "title": "Source column"
+          },
+          {
+            "field": "passengers",
+            "title": "Passenger movements",
+            "format": ","
+          },
+          {
+            "field": "change",
+            "title": "Change since 2018-19",
+            "format": "+.1%"
+          }
+        ]
+      }
+    }
+  ]
+}

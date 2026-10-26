@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An interactive story of Australian airports: passenger activity, recovery and the domestic routes connecting the country.">
+  <meta name="theme-color" content="#fff9ed">
+  <title>Australia, by air | Australian Airports</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer src="vendor/vega.min.js"></script>
+  <script defer src="vendor/vega-lite.min.js"></script>
+  <script defer src="vendor/vega-embed.min.js"></script>
+  <script defer src="js/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to the visualisation</a>
+  <header class="masthead">
+    <a class="brand" href="#top"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="m29 14-11-2-6-9h-3l3 10-8-1-2-3H0l2 6L0 21h2l2-3 8-1-3 10h3l6-9 11-2z"/></svg>AUSTRALIAN AIRPORTS</a>
+    <span class="draft-label"><i aria-hidden="true"></i> YOUR BOARDING PASS TO THE NUMBERS</span>
+  </header>
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <svg class="hero-airways" viewBox="0 0 1200 680" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <defs><pattern id="air-grid" width="55" height="55" patternUnits="userSpaceOnUse"><path d="M55 0H0V55" fill="none" stroke="#8aa6cc" stroke-opacity=".12"/></pattern><radialGradient id="air-glow"><stop stop-color="#3979ff" stop-opacity=".55"/><stop offset="1" stop-color="#3979ff" stop-opacity="0"/></radialGradient></defs>
+        <rect width="1200" height="680" fill="url(#air-grid)"/><ellipse cx="970" cy="260" rx="420" ry="380" fill="url(#air-glow)"/>
+        <g fill="none" stroke="#8ab1ff" stroke-width="1.2" opacity=".48"><path d="M530 655Q650 310 1155 80"/><path d="M490 680Q830 550 1200 180" stroke-dasharray="5 8"/><path d="M700 0Q730 300 1200 490"/><circle cx="970" cy="275" r="180"/><circle cx="970" cy="275" r="235" stroke-dasharray="2 13"/></g>
+        <g fill="#ce5626"><circle cx="630" cy="460" r="5"/><circle cx="1152" cy="82" r="5"/><circle cx="1088" cy="416" r="4"/></g>
+        <g fill="#fff" opacity=".75"><path d="M510 125h128a19 19 0 0 0-36-12 28 28 0 0 0-52 4 18 18 0 0 0-40 8Z"/><path d="M993 550h143a21 21 0 0 0-40-11 31 31 0 0 0-58-3 23 23 0 0 0-45 14Z"/></g>
+        <path d="m0-32 5 25 23 16v7L5 8 5 24l8 9v5L0 33l-13 5v-5l8-9V8l-23 8V9L-5-7z" transform="translate(720 300) rotate(40)" fill="#216c9f" opacity=".8"/>
+      </svg>
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="hero-kicker-dot" aria-hidden="true"></span> A COUNTRY CONNECTED BY AIR</p>
+        <h1 id="hero-title">Australia,<br><em>by air.</em></h1>
+        <p class="hero-lead">Busy city gateways. Regional lifelines. A network that came to a near standstill—and is taking off again.</p>
+        <p>Follow passenger activity across Australia, from the pandemic disruption to the airports and routes shaping today's domestic network.</p>
+        <a class="hero-cta" href="#network">Let's take a look <span aria-hidden="true">↗</span></a>
+        <div class="byline"><span></span></div>
+      </div>
+      <div class="boarding-pass" aria-label="2025-26 domestic aviation overview">
+        <div class="pass-top"><span>AUSTRALIA / DOMESTIC</span><span>2025–26</span></div>
+        <div class="pass-route"><span>AUS</span><svg viewBox="0 0 160 34" aria-hidden="true"><path d="M0 17h45m65 0h50" fill="none" stroke="currentColor" stroke-dasharray="3 5"/><path d="m99 16-14-3-8-11h-4l4 13-9-1-4-4h-3l3 8-3 8h3l4-4 9-1-4 13h4l8-11 14-3z" fill="currentColor"/></svg><span>AUS</span></div>
+        <p class="pass-caption">DOMESTIC SCHEDULED SERVICES</p>
+        <div class="pass-metric"><strong>60.75<span>m</span></strong><p>passenger trips in 2025–26</p></div>
+        <div class="pass-bottom"><div><strong>58</strong><span>airports mapped</span></div><div><strong>98.1%</strong><span>of domestic movements covered</span></div></div>
+        <div class="barcode" aria-hidden="true"></div>
+        <div class="pass-ticket-footer"><small>BITRE / YEAR ENDING JUN 2026</small><span aria-hidden="true">AU–026</span></div>
+      </div>
+    </section>
+    <nav class="chapter-nav" aria-label="Jump to a story section">
+      <a href="#network"><span>01</span><b>The airport network<small>Where passengers travel</small></b><i aria-hidden="true">↓</i></a>
+      <a href="#recovery"><span>02</span><b>Disruption & recovery<small>What changed after 2019</small></b><i aria-hidden="true">↓</i></a>
+      <a href="#regions"><span>03</span><b>Beyond the big cities<small>A different regional picture</small></b><i aria-hidden="true">↓</i></a>
+      <a href="#routes"><span>04</span><b>The connections<small>Follow the two-way network</small></b><i aria-hidden="true">↓</i></a>
+    </nav>
+
+    <aside class="definition-strip"><strong>What is a passenger movement?</strong> One arrival or departure at an airport. A passenger flying Melbourne → Sydney generates <strong>two airport movements</strong>, but only <strong>one passenger trip</strong>. Neither measure counts unique people.</aside>
+
+    <div class="aviation-scene" aria-label="Original illustration of a passenger aircraft departing an Australian airport">
+      <div><p class="eyebrow">CLEARED FOR DEPARTURE</p><p>One country.<br><strong>Many different journeys.</strong></p><span>Read the network through volume, recovery and connections.</span></div>
+      <img src="assets/airport-departure.svg" alt="Illustrated passenger jet taking off beside a terminal and control tower" width="860" height="250">
+    </div>
+
+    <section class="chapter" id="network" aria-labelledby="network-title">
+      <div class="chapter-heading"><p class="eyebrow">01 / THE AIRPORT NETWORK</p><h2 id="network-title">A few gateways carry a lot of the traffic.</h2><p>Australia's population centres are widely separated. Its largest airports connect those cities, while smaller airports extend the network along the coast and into the interior.</p></div>
+      <div class="map-panel">
+        <div class="figure-head"><div><span class="chart-type">PROPORTIONAL SYMBOL MAP</span><h3>Where are Australia's passenger airports?</h3></div><span class="scope-tag">DOMESTIC · 2024–25 / 2025–26</span></div>
+        <div class="map-layout"><figure class="map-figure"><div id="airport-map" class="vis map-vis" aria-label="Map of passenger movements at 58 selected Australian airports"></div><figcaption>Circle <strong>area</strong> represents passenger movements. Hover for the airport and its growth rate. Change the financial year below the map. Small airports have genuinely small circles; they are not missing data.</figcaption></figure>
+          <aside class="map-aside"><p class="big-stat">55.8<span>%</span></p><h4>through just three airports</h4><p>Sydney, Melbourne and Brisbane account for more than half of national domestic airport movements. Concentration is the first feature of this network: a few gateways handle a large share of activity.</p><div class="aside-divider"></div><h4>Small circles, different roles</h4><p>Volume does not measure an airport's importance to its community. The map shows how busy an airport is; it cannot show whether travellers have a practical alternative.</p><p class="small">The 58 mapped airports cover 98.1% of domestic movements, not 98.1% of all Australian airfields. Charter, private and military flights are excluded.</p></aside></div>
+        <a class="spec-link" href="js/01-airport-map.vg.json">View the readable map specification</a>
+      </div>
+      <div class="two-up">
+        <figure class="chart-panel"><div class="figure-head"><div><span class="chart-type">LOLLIPOP CHART</span><h3>The busiest domestic gateways</h3></div></div><div id="airport-ranking" class="vis"></div><figcaption>Top 12 among the 58 airports covered, 2025–26. The line starts at zero and the dot marks passenger movements. Sydney and Melbourne are close in scale; there is a much larger gap between the top three and the next airport, Perth.</figcaption><a class="spec-link" href="js/02-airport-ranking.vg.json">Chart specification</a></figure>
+        <figure class="chart-panel"><div class="figure-head"><div><span class="chart-type">TREEMAP</span><h3>How traffic is divided within each state</h3></div></div><div id="airport-treemap" class="vis"></div><figcaption>Rectangle area shows 2025–26 domestic movements. Airports are nested within their states. Shares refer to the <strong>selected 58 airports</strong>, not all airports. Hover over the smaller rectangles for names.</figcaption><a class="spec-link" href="js/12-airport-treemap.vg.json">Chart specification</a></figure>
+      </div>
+    </section>
+
+    <section class="chapter" id="recovery" aria-labelledby="recovery-title">
+      <div class="chapter-heading"><p class="eyebrow">02 / DISRUPTION & RECOVERY</p><h2 id="recovery-title">The shock was shared. The recovery was not.</h2><p>COVID-19 interrupted years of growth. International passenger trips fell especially sharply. By 2024–25, national traffic had recovered much of the lost ground, but individual airports followed different paths.</p></div>
+      <figure class="chart-panel full-chart"><div class="figure-head"><div><span class="chart-type">TIME SERIES</span><h3>A decade of growth, interruption and recovery</h3></div><span class="scope-tag">NATIONAL · 2014–15 TO 2024–25</span></div><div id="national-trend" class="vis"></div><figcaption>National passenger trips on scheduled services. Domestic trips are counted once per flight leg, not twice as airport movements. Shading marks the years most affected by pandemic travel restrictions. The 2024–25 domestic figure uses the revision in BITRE's 2025–26 annual report.</figcaption><a class="spec-link" href="js/03-national-trend.vg.json">Chart specification</a></figure>
+      <div class="insight-banner"><strong>The shock was much deeper internationally.</strong><p>Between 2018–19 and 2020–21, international passenger trips fell about <strong>97%</strong>, compared with <strong>65%</strong> domestically. These are national totals: the airport heatmap below reveals how the disruption was distributed, using each airport's own pre-pandemic baseline.</p></div>
+      <figure class="chart-panel full-chart"><div class="figure-head"><div><span class="chart-type">TEMPORAL HEATMAP</span><h3>How deeply did each major airport fall?</h3></div><span class="scope-tag">DOMESTIC + INTERNATIONAL</span></div><div id="recovery-heatmap" class="vis"></div><figcaption>Each cell compares an airport's passenger movements with <strong>its own 2018–19 level</strong>. 100% means the pre-pandemic volume; 50% means half that volume. This comparison includes domestic and international services at 11 major airports. It must not be directly compared with the domestic-only map above.</figcaption><a class="spec-link" href="js/04-recovery-heatmap.vg.json">Chart specification</a></figure>
+      <div class="chart-with-copy"><figure class="chart-panel"><div class="figure-head"><div><span class="chart-type">DUMBBELL PLOT</span><h3>Back to 2019—or still below it?</h3></div></div><div id="recovery-dumbbell" class="vis"></div><figcaption>The two points show 2018–19 and 2024–25 passenger movements, including domestic and international services. The connecting line shows the size of the gap.</figcaption><a class="spec-link" href="js/05-recovery-dumbbell.vg.json">Chart specification</a></figure>
+        <aside class="text-aside"><h3>Recovery depends on where you look.</h3><p>Perth's combined traffic was about <strong>14.5% above</strong> its 2018–19 level in 2024–25. Canberra remained about <strong>12.9% below</strong>.</p><p>The national recovery therefore hides different local outcomes. A smaller airport can regain its earlier volume while a larger one still has more passengers missing in absolute terms. The heatmap compares proportional recovery; this plot shows the size of the gap.</p><p class="small">These volumes do not establish the causes of recovery. The Yearbook airport figures are rounded to the nearest thousand movements.</p></aside></div>
+      <figure class="chart-panel full-chart"><div class="figure-head"><div><span class="chart-type">BUMP CHART</span><h3>Did the disruption change the airport hierarchy?</h3></div><span class="scope-tag">11 AIRPORTS · 2018–19 TO 2024–25</span></div><div id="airport-bump" class="vis" aria-label="Changes in passenger ranking among eleven major airports"></div><figcaption>Higher positions mean a higher passenger rank within these <strong>11 airports</strong>, not all Australian airports. Brisbane moved above Melbourne in 2020–21, but Melbourne had regained second place by 2024–25. Hobart finished just ahead of Canberra. Ranking shows relative position; it does not show the very large differences in their passenger totals. Use the highlight selector to follow one airport.</figcaption><a class="spec-link" href="js/13-airport-bump.vg.json">Chart specification</a></figure>
+    </section>
+
+    <section class="chapter" id="regions" aria-labelledby="regions-title">
+      <div class="chapter-heading"><p class="eyebrow">03 / BEYOND THE BIG CITIES</p><h2 id="regions-title">Busy is relative.</h2><p>A large state population often brings large passenger totals. Dividing activity by population reveals a different geography: less populous states and territories can have high airport activity relative to their resident base.</p></div>
+      <div class="map-panel"><div class="figure-head"><div><span class="chart-type">POPULATION-NORMALISED CHOROPLETH</span><h3>Airport activity relative to population</h3></div><span class="scope-tag">2025–26 · SELECTED AIRPORTS</span></div>
+        <div class="map-layout"><figure class="map-figure"><div id="state-choropleth" class="vis map-vis"></div><figcaption>Darker colour means more domestic passenger movements at the selected airports per resident. The numerator is 2025–26 activity; the denominator is ABS resident population at <strong>31 December 2025</strong>, approximately the financial year's midpoint. Hover to see both values.</figcaption></figure>
+          <aside class="map-aside"><p class="big-stat">9.1</p><h4>movements per resident in the NT</h4><p>The NT has the highest rate among the selected airports, followed by Tasmania at about 8.0. The picture changes when activity is compared with population rather than raw totals.</p><div class="aside-divider"></div><h4>Activity, not personal flying frequency</h4><p>These movements include visitors and connections. A small resident population can produce a high rate, and ACT airports serve a catchment extending beyond the territory.</p><p class="small">All rates use the same 58-airport subset and ABS population at December 2025. Uncovered airports are not assigned zero traffic.</p></aside></div>
+        <a class="spec-link" href="js/06-state-choropleth.vg.json">View the readable map specification</a>
+      </div>
+      <figure class="chart-panel full-chart"><div class="figure-head"><div><span class="chart-type">WATERFALL CHART</span><h3>Where did the extra domestic activity come from?</h3></div><span class="scope-tag">2024–25 → 2025–26</span></div><div id="state-waterfall" class="vis"></div><figcaption>National domestic airport movements increased by about <strong>2.59 million</strong>. Each step adds a state's contribution at the selected airports. This shows contribution to national growth, rather than each state's percentage growth: a large airport base can add many movements with only a modest growth rate. ACT's negative contribution partly offsets the gains elsewhere. “Other airports” reconciles the uncovered airports to the national total.</figcaption><a class="spec-link" href="js/07-state-waterfall.vg.json">Chart specification</a></figure>
+    </section>
+
+    <section class="chapter" id="routes" aria-labelledby="routes-title">
+      <div class="chapter-heading"><p class="eyebrow">04 / THE CONNECTIONS</p><h2 id="routes-title">Airports matter because of what they connect.</h2><p>Passengers travel along routes, not just through dots on a map. The Melbourne–Sydney corridor carries the most domestic passenger trips, but the network also connects regional centres to the capital cities.</p></div>
+      <div class="map-panel"><div class="figure-head"><div><span class="chart-type">FLOW MAP</span><h3>The routes joining Australia</h3></div><span class="scope-tag">2025–26 · PUBLISHED MAJOR ROUTES</span></div>
+        <div class="map-layout"><figure class="map-figure"><div class="flow-key"><span aria-hidden="true">↔</span> Two-way connections · passenger totals combine both directions</div><div id="route-flow-map" class="vis map-vis" aria-label="Two-way route connections between Australian airports"></div><figcaption>Line width encodes passenger trips in <strong>both directions combined</strong>. Paired arrowheads indicate two-way connections; they do not show which direction is busier. Lines are geographic links, not tracked flight paths. Select a hub, change the route limit or toggle arrows below. The 62 published competitive routes are a subset of the domestic network.</figcaption></figure>
+          <aside class="map-aside"><p class="big-stat">8.08<span>m</span></p><h4>Melbourne–Sydney passenger trips</h4><p>This one corridor carried roughly 13.3% of national domestic scheduled trips in 2025–26. Its prominence helps explain why the largest airport dots also form the strongest links.</p><div class="aside-divider"></div><h4>Geography and concentration</h4><p>Select Perth to isolate western connections. Then compare Brisbane's links with regional Queensland. The matrix below removes crossing lines so route volumes can be compared more easily.</p><p class="small">Only the busiest 15 routes appear initially. Two-headed arrows describe connectivity; the source does not split passenger volumes by direction.</p></aside></div>
+        <a class="spec-link" href="js/08-route-flow-map.vg.json">View the readable map specification</a>
+      </div>
+      <div class="two-up">
+        <figure class="chart-panel"><div class="figure-head"><div><span class="chart-type">ADJACENCY MATRIX</span><h3>The strongest connections, without crossing lines</h3></div></div><div id="route-matrix" class="vis"></div><figcaption>Airport codes label 12 hubs. Darker cells show more passenger trips. The matrix is symmetric because trips are combined in both directions. Grey cells mean the route is absent from this <strong>published subset</strong>, not that no flights operate. Hover for full names.</figcaption><a class="spec-link" href="js/09-route-matrix.vg.json">Chart specification</a></figure>
+        <figure class="chart-panel"><div class="figure-head"><div><span class="chart-type">SCATTERPLOT</span><h3>Passenger numbers and aircraft activity</h3></div></div><div id="aircraft-scatter" class="vis"></div><figcaption>Each point is one of the 62 published routes in 2025–26. Aircraft trips include scheduled cargo flights, so passengers divided by this count must not be interpreted as aircraft seating capacity or occupancy.</figcaption><a class="spec-link" href="js/10-aircraft-scatter.vg.json">Chart specification</a></figure>
+      </div>
+      <div class="chart-with-copy"><figure class="chart-panel"><div class="figure-head"><div><span class="chart-type">100% STACKED BAR CHART</span><h3>How much of the available seating was used?</h3></div></div><div id="seat-utilisation" class="vis"></div><figcaption>Published seat utilisation for the 12 busiest routes, 2025–26. Occupied and unoccupied portions add to 100%. For a single route, the same distance is used for all seats and passengers.</figcaption><a class="spec-link" href="js/11-seat-utilisation.vg.json">Chart specification</a></figure>
+        <aside class="text-aside"><h3>Busy does not necessarily mean full.</h3><p>A route can carry many passengers because it offers many flights, many seats per flight, or high seat utilisation. These are separate dimensions. The scatterplot shows passenger and aircraft activity; the seating chart shows how much capacity was used.</p><p>Likewise, the three maps answer different questions: <strong>where activity occurs</strong>, <strong>how it compares with population</strong>, and <strong>which places are connected</strong>. Together they show a concentrated network with very different local scales and recovery paths.</p></aside></div>
+    </section>
+
+    <section class="sources" aria-labelledby="sources-title"><p class="eyebrow">SOURCES & METHODS</p><h2 id="sources-title">A note on the numbers.</h2>
+      <div class="source-grid"><div><h3>Government statistics</h3><ul>
+        <li><a href="https://www.bitre.gov.au/resource/aviation/australian-domestic-aviation-activity-annual-publications">BITRE Domestic Aviation Activity, 2025–26</a>: Tables 1–5 and 7, published pages 3–11 and 23. Airport and route comparisons use financial years ending June 2025 and June 2026.</li>
+        <li><a href="https://www.bitre.gov.au/sites/default/files/documents/bitre-yearbook-2025.pdf">BITRE Australian Infrastructure and Transport Statistics Yearbook 2025</a>: Tables 6.1, 6.2, 6.3a and 6.3b, published pages 138–141. Historical airport comparisons include domestic and international services.</li>
+        <li><a href="https://www.abs.gov.au/statistics/people/population/national-state-and-territory-population/mar-2026">ABS National, State and Territory Population, March 2026 release</a>: Table 4, Persons by state and territory. The December 2025 observations are used to match the midpoint of 2025–26.</li>
+      </ul></div><div><h3>Geography and preparation</h3><ul>
+        <li><a href="https://ourairports.com/data/">OurAirports</a> supplies airport coordinates and state identifiers. Thursday Island is plotted at its serving Horn Island airport. Burnie is plotted at Wynyard airport.</li>
+        <li><a href="https://www.naturalearthdata.com/">Natural Earth</a> supplies simplified state boundaries. Both geographic datasets are public domain. All three maps use an Australia-centred Albers equal-area projection.</li>
+        <li>Source values are retained; figures in thousands are converted to counts. Derived rates, shares and comparisons are documented in <a href="documentation/DATA_NOTES.md">Data notes</a>. No missing values are filled with invented figures.</li>
+      </ul></div></div>
+      <p class="method-note">Coverage: 58 distinct airports, formed by deduplicating BITRE's top-ten and top-fifty-regional tables. They represent 98.1% of national domestic airport passenger movements in 2025–26. “Regional” in the source follows ABS geography; this page does not assume that all state capitals are non-regional. All financial-year labels refer to 1 July–30 June. Historical tables and the latest report can differ because of revisions and rounding.</p>
+      <p class="ai-note">Design assets: original SVG aircraft, airport and route illustrations created for this project. Nunito and DM Sans are from <a href="https://fonts.google.com/">Google Fonts</a> and bundled under their SIL Open Font Licenses. Charts were created using Vega and Vega-Lite. Generative AI was utilised during the course of this assignment. Author: Marcus Von Hagt.</p>
+    </section>
+  </main>
+  <footer><span>Marcus Von Hagt · FIT3179 Data Visualisation 2</span><span>25 October 2026 · Australian Airports</span><a href="#top">Back to top ↑</a></footer>
+  <noscript><p class="noscript">Enable JavaScript to load the Vega-Lite maps and charts. The sources and narrative remain readable above.</p></noscript>
+</body>
+</html>

@@ -1,0 +1,59 @@
+airport,iata,state,lat,lon,location_name,ident
+Sydney,SYD,NSW,-33.9461,151.177,Sydney Kingsford Smith International Airport,YSSY
+Melbourne,MEL,VIC,-37.67073,144.8379,Melbourne Airport,YMML
+Brisbane,BNE,QLD,-27.3842,153.117,Brisbane International Airport,YBBN
+Perth,PER,WA,-31.9403,115.967,Perth International Airport,YPPH
+Adelaide,ADL,SA,-34.94751,138.53339,Adelaide International Airport,YPAD
+Gold Coast,OOL,QLD,-28.16596,153.50664,Gold Coast Airport,YBCG
+Cairns,CNS,QLD,-16.87892,145.74948,Cairns International Airport,YBCS
+Hobart,HBA,TAS,-42.83703,147.51302,Hobart International Airport,YMHB
+Canberra,CBR,ACT,-35.3069,149.19501,Canberra Airport,YSCB
+Sunshine Coast,MCY,QLD,-26.59332,153.08319,Sunshine Coast Airport,YBSU
+Townsville,TSV,QLD,-19.2529,146.76651,Townsville Airport / RAAF Base Townsville,YBTL
+Darwin,DRW,NT,-12.41497,130.88185,Darwin International Airport / RAAF Darwin,YPDN
+Launceston,LST,TAS,-41.54494,147.21078,Launceston Airport,YMLT
+Newcastle,NTL,NSW,-32.79611,151.83503,Newcastle Airport,YWLM
+Mackay,MKY,QLD,-21.17082,149.18259,Mackay Airport,YBMK
+Karratha,KTA,WA,-20.7122,116.773,Karratha Airport,YPKA
+Rockhampton,ROK,QLD,-23.38002,150.47536,Rockhampton Airport,YBRK
+Ballina,BNK,NSW,-28.83324,153.56147,Ballina Byron Gateway Airport,YBNA
+Proserpine,PPP,QLD,-20.49442,148.55358,Proserpine Whitsunday Coast Airport,YBPN
+Port Hedland,PHE,WA,-20.38279,118.62979,Port Hedland International Airport,YPPD
+Hamilton Island,HTI,QLD,-20.3581,148.952,Hamilton Island Airport,YBHM
+Broome,BME,WA,-17.94919,122.2283,Broome International Airport,YBRM
+Newman,ZNE,WA,-23.4178,119.803,Newman Airport,YNWN
+Kalgoorlie,KGI,WA,-30.79154,121.46459,Kalgoorlie Boulder Airport,YPKG
+Alice Springs,ASP,NT,-23.80659,133.90343,Alice Springs Airport,YBAS
+Ayers Rock,AYQ,NT,-25.18591,130.97703,Ayers Rock Connellan Airport,YAYE
+Coffs Harbour,CFS,NSW,-30.3206,153.116,Coffs Harbour Airport,YCFS
+Mount Isa,ISA,QLD,-20.66638,139.48847,Mount Isa Airport,YBMA
+Hervey Bay,HVB,QLD,-25.32013,152.88066,Hervey Bay Airport,YHBA
+Paraburdoo,PBO,WA,-23.1711,117.745,Paraburdoo Airport,YPBO
+Albury,ABX,NSW,-36.06676,146.95915,Albury Airport,YMAY
+Wagga Wagga,WGA,NSW,-35.16348,147.46832,Wagga Wagga Airport,YSWG
+Dubbo,DBO,NSW,-32.2167,148.575,Dubbo City Regional Airport,YSDU
+Gladstone,GLT,QLD,-23.86976,151.22544,Gladstone Airport,YGLA
+Port Macquarie,PQQ,NSW,-31.4358,152.86301,Port Macquarie Airport,YPMQ
+Emerald,EMD,QLD,-23.5675,148.179,Emerald Airport,YEML
+Mildura,MQL,VIC,-34.2292,142.086,Mildura Airport,YMIA
+Port Lincoln,PLO,SA,-34.6053,135.88,Port Lincoln Airport,YPLC
+Tamworth,TMW,NSW,-31.0779,150.84548,Tamworth Airport,YSTW
+Devonport,DPO,TAS,-41.1697,146.42999,Devonport Airport,YDPO
+Bundaberg,BDB,QLD,-24.90504,152.32261,Bundaberg Airport,YBUD
+Kununurra,KNX,WA,-15.7781,128.70799,East Kimberley Regional (Kununurra) Airport,YPKU
+Orange,OAG,NSW,-33.38201,149.13126,Orange Airport,YORG
+Geraldton,GET,WA,-28.7961,114.707,Geraldton Airport,YGEL
+Thursday Island,HID,QLD,-10.58564,142.29277,Horn Island Airport,YHID
+Armidale,ARM,NSW,-30.5281,151.617,Armidale Airport,YARM
+Olympic Dam,OLP,SA,-30.48386,136.8767,Olympic Dam Airport,YOLD
+Weipa,WEI,QLD,-12.67749,141.92262,Weipa Airport,YBWP
+Learmonth,LEA,WA,-22.2352,114.09002,Learmonth Airport,YPLM
+Busselton,BQB,WA,-33.68722,115.40028,Busselton Margaret River Regional Airport,YBLN
+Moranbah,MOV,QLD,-22.0578,148.077,Moranbah Airport,YMRB
+Gove,GOV,NT,-12.2694,136.81799,Gove Airport,YPGV
+Burnie,BWT,TAS,-40.99704,145.726,Wynyard Airport,YWYY
+Merimbula,MIM,NSW,-36.9086,149.901,Merimbula Airport,YMER
+Griffith,GFF,NSW,-34.2508,146.067,Griffith Airport,YGTH
+Mount Gambier,MGB,SA,-37.74438,140.78056,Mount Gambier Airport,YMTG
+Albany,ALH,WA,-34.94333,117.80889,Albany Airport,YABA
+Roma,RMA,QLD,-26.545,148.77499,Roma Airport,YROM

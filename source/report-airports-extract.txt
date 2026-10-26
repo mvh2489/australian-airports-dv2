@@ -1,0 +1,405 @@
+Published numerical table extract. Source: https://www.bitre.gov.au/sites/default/files/documents/Domestic%20Aviation%20Activity%202025-26.pdf
+
+L92@P4: Top twenty routes........................................................................................... 13
+L93@P4: 1. Melbourne – Sydney ................................................................................ 13
+L94@P4: 2. Brisbane – Sydney.................................................................................... 13
+L95@P4: 3. Brisbane – Melbourne .............................................................................. 14
+L96@P4: 4. Gold Coast – Sydney................................................................................ 14
+L97@P4: 5. Adelaide – Melbourne............................................................................... 15
+L98@P4: 6. Gold Coast – Melbourne........................................................................... 15
+L99@P4: 7. Melbourne – Perth .................................................................................... 16
+L100@P4: 8. Adelaide – Sydney.................................................................................... 16
+L101@P4: 9. Perth – Sydney ......................................................................................... 17
+L102@P4:  10. Hobart – Melbourne.................................................................................. 17
+L103@P4:  11. Brisbane – Cairns ..................................................................................... 18
+L104@P4:  12. Brisbane – Perth....................................................................................... 18
+L105@P4:  13. Brisbane – Townsville............................................................................... 19
+L106@P4:  14. Canberra – Melbourne.............................................................................. 19
+L107@P4:  15. Adelaide – Brisbane................................................................................. 20
+L108@P4:  16. Cairns – Sydney ....................................................................................... 20
+L109@P4:  17. Launceston – Melbourne .......................................................................... 21
+L110@P4:  18. Cairns – Melbourne .................................................................................. 21
+L111@P4:  19. Hobart – Sydney....................................................................................... 22
+L112@P4:  20. Brisbane – Mackay ................................................................................... 22
+L113@P4:  Top fifty regional airports...................................................................................... 23
+L114@P4:  Domestic charter activity....................................................................................... 24
+L115@P4-5:  Definitions ............................................................................................................. 25BITRE – AVIATION STATISTICS DOMESTIC ANNUAL
+L116@P5: vi
+L117@P5-6:  This page is intentionally left blank. Highlights
+L118@P6: 1
+L119@P6: HIGHLIGHTS
+L120@P6: There were 65.32 million passengers carried on Australian domestic commercial aviation
+L121@P6: (including charter operations) in the year ending June 2026, an increase of 2.4% compared
+L122@P6: with the year ending June 2025. This is 0.4% lower compared with pre-COVID year ending
+L123@P6: June 2019.
+L124@P6: 60.75 million passengers were carried on RPT flights in the year ending June 2026, an
+L125@P6: increase of 2.2% compared with the year ending June 2025.
+L126@P6: In the year ending June 2026 there were 602.9 thousand RPT aircraft trips compared to
+L127@P6: 601.0 thousand in the previous year, an increase of 0.3%.
+L128@P6: RPT revenue passenger kilometres (RPKs) performed were 73.26 billion, an increase of
+L129@P6: 2.3% compared with the year ending June 2025.
+L130@P6: Capacity, measured by available seat kilometres (ASKs), increased by 3.2% compared with
+L131@P6: the year ending June 2025, to a total of 89.08 billion.
+L132@P6: The industry wide load factor (RPKs/ASKs) decreased from 82.9% in the year ending June
+L133@P6: 2025 to 82.2% in the year ending June 2026. The highest load factor (91.8%) was recorded
+L134@P6: on the Adelaide – Gold Coast route while the lowest load factor (53.7%) was recorded on
+L135@P6: the Geraldton – Perth route.
+L136@P6: For the year ending June 2026, Melbourne – Sydney remained Australia’s busiest RPT
+L137@P6: route with 8.08 million passengers, an increase of 0.3% compared with the previous
+L138@P6: calendar year. It was followed by Brisbane – Sydney with 4.43 million passengers
+L139@P6: (up 1.6%) and Brisbane – Melbourne with 3.70 million passengers (up 4.0%).
+L140@P6: In the year ending June 2026, Sydney was Australia’s busiest domestic airport with 25.50
+L141@P6: million passenger movements, up 1.2% compared with the year ending June 2025, followed
+L142@P6: by Melbourne with 24.61 million passenger movements (up 2.1%) and Brisbane with
+L143@P6: 17.74 million passenger movements (up 2.5%).
+L144@P6: Total cargo movements at Australian airports on domestic RPT flights were 321.9 thousand
+L145@P6: tonnes in the year ending June 2026, an increase of 0.3% compared to the year ending
+L146@P6: June 2025.
+L147@P6: In the year ending June 2026, the number of domestic aviation passengers travelling
+L148@P6: through regional airports was 25.63 million, up 2.0% compared to the year ending June
+L149@P6: 2025. Out of the top 50 regional airports, the strongest increase was recorded at Orange
+L150@P6: airport (up 17.1%) while the largest decrease was recorded at Paraburdoo airport (down
+L151@P6: 17.1%).
+L152@P6: Fixed-wing charter operators carried 4.56 million passengers in the year ending June 2026,
+L153@P6: an increase of 5.8% compared with the year ending June 2025. There were 77.0 thousand
+L154@P6: charter aircraft trips in the year ending June 2026, an increase of 4.1% compared with the
+L155@P6-7: previous year. Perth airport accounted for 35.4% of all charter passengers in Australia.BITRE – AVIATION STATISTICS DOMESTIC ANNUAL
+L156@P7: 2
+L157@P7: TOTAL NETWORK
+L158@P7: RPT NETWORK
+L159@P7: Summary of annual commercial aviation activity
+L160@P7: YE Jun 2025 YE Jun 2026
+L161@P7: Total passengers carried (millions) 63.77 65.32 2.4
+L162@P7: Aircraft trips (000s) 675.0 679.9 0.7
+L163@P7: Note: Regular Public Transport and charter aviation activity, Helicopter, joyflights and sightseeing charter flights not included.
+L164@P7: % Change
+L165@P7: Summary of annual RPT activity
+L166@P7: YE Jun 2025 YE Jun 2026 % Change
+L167@P7: Total passengers carried (millions) 59.46 60.75 2.2
+L168@P7: Revenue passenger kilometres (billions) 71.62 73.26 2.3
+L169@P7: Available seats (millions) 73.32 75.26 2.6
+L170@P7: Available seat kilometres (billions) 86.35 89.08 3.2
+L171@P7: Load factor % 82.9 82.2 -0.7 *
+L172@P7: Aircraft trips (000s) 601.0 602.9 0.3
+L173@P7: * percentage point difference
+L174@P7: graph needed here
+L175@P7: 55
+L176@P7: 65
+L177@P7: 75
+L178@P7: 85
+L179@P7: 95
+L180@P7: 0
+L181@P7: 20
+L182@P7: 40
+L183@P7: 60
+L184@P7: 80
+L185@P7: 100
+L186@P7: Load factors (%)
+L187@P7: ASKs / RPKs (billions)
+L188@P7: Year ending
+L189@P7: RPT Network utilisation
+L190@P7: ASKs RPKs LF %
+L191@P7: (moving annual totals )
+L192@P7: 0
+L193@P7: 10
+L194@P7: 20
+L195@P7: 30
+L196@P7: 40
+L197@P7: 50
+L198@P7: 60
+L199@P7: 70
+L200@P7: Total passengers carried (millions)
+L201@P7: Year ending
+L202@P7: Domestic RPT passenger traffic
+L203@P7-8: (moving annual totals) RPT network
+L204@P8: 3
+L205@P8: TOP COMPETITIVE ROUTES
+L206@P8: Table 1: Passengers carried (000s) — annual activity
+L207@P8: City-Pair YE Jun 2025 YE Jun 2026 % Change
+L208@P8: 1 Melbourne - Sydney 8,055.8 8,080.5 0.3
+L209@P8: 2 Brisbane - Sydney 4,358.8 4,429.2 1.6
+L210@P8: 3 Brisbane - Melbourne 3,553.1 3,696.3 4.0
+L211@P8: 4 Gold Coast - Sydney 2,465.8 2,610.1 5.9
+L212@P8: 5 Adelaide - Melbourne 2,323.7 2,414.5 3.9
+L213@P8: 6 Gold Coast - Melbourne 2,106.6 2,216.7 5.2
+L214@P8: 7 Melbourne - Perth 2,066.2 2,102.4 1.8
+L215@P8: 8 Adelaide - Sydney 1,890.1 1,903.2 0.7
+L216@P8: 9 Perth - Sydney 1,717.9 1,733.0 0.9
+L217@P8: 10 Hobart - Melbourne 1,423.3 1,457.5 2.4
+L218@P8: 11 Brisbane - Cairns 1,306.1 1,304.3 -0.1
+L219@P8: 12 Brisbane - Perth 1,127.6 1,137.5 0.9
+L220@P8: 13 Brisbane - Townsville 964.9 1,019.9 5.7
+L221@P8: 14 Canberra - Melbourne 984.7 952.9 -3.2
+L222@P8: 15 Adelaide - Brisbane 863.6 907.6 5.1
+L223@P8: 16 Cairns - Sydney 917.9 907.5 -1.1
+L960@P25: Aircraft trips 7,827 8,107 3.6
+L961@P25: * percentage point difference
+L962@P25: graph needed here
+L963@P25: (a) April to June 2020 moving annuals are not available for release.
+L964@P25: 55
+L965@P25: 65
+L966@P25: 75
+L967@P25: 85
+L968@P25: 95
+L969@P25:  0
+L970@P25:  300
+L971@P25:  600
+L972@P25:  900
+L973@P25: 1 200
+L974@P25: 1 500
+L975@P25: Load factor (%) Passengers/seats
+L976@P25: (000s)
+L977@P25: Year ending
+L978@P25: Passengers
+L979@P25: Seats
+L980@P25: Load factor (%)
+L981@P25: 16. Cairns - Sydney (a)
+L982@P25: Moving annual data
+L983@P25: YE Jun 2025 YE Jun 2026 % Change
+L984@P25: Passengers carried (000s) 917.9 907.5 -1.1
+L985@P25: Seats (000s) 1,039.4 1,029.0 -1.0
+L987@P25: Aircraft trips 5,574 5,579 0.1
+L988@P25: * percentage point difference
+L989@P25: graph needed here
+L990@P25: (a) August to November 2020 moving annuals are not available for release.
+L991@P25: 55
+L992@P25: 65
+L993@P25: 75
+L994@P25: 85
+L995@P25: 95
+L996@P25:  0
+L997@P25:  300
+L998@P25:  600
+L999@P25:  900
+L1000@P25: 1 200
+L1001@P25: 1 500
+L1002@P25: Load factor (%) Passengers/seats
+L1003@P25: (000s)
+L1004@P25: Year ending
+L1005@P25: Passengers
+L1006@P25: Seats
+L1007@P25-26: Load factor (%)Top twenty routes
+L1008@P26: 21
+L1009@P26: 17. Launceston - Melbourne (a)
+L1010@P26: Moving annual data
+L1011@P26: YE Jun 2025 YE Jun 2026 % Change
+L1012@P26: Passengers carried (000s) 870.3 896.1 3.0
+L1013@P26: Seats (000s) 1,020.7 1,055.9 3.4
+L1014@P26: Load factor % 85.3 84.9 -0.4 *
+L1015@P26: Aircraft trips 7,518 7,991 6.3
+L1016@P26: * percentage point difference
+L1017@P26: graph needed here
+L1018@P26: (a) April to November 2020 moving annuals are not available for release.
+L1019@P26: 55
+L1020@P26: 65
+L1021@P26: 75
+L1022@P26: 85
+L1023@P26: 95
+L1024@P26:  0
+L1025@P26:  250
+L1026@P26:  500
+L1027@P26:  750
+L1028@P26: 1 000
+L1029@P26: 1 250
+L1030@P26: Load factor (%)
+L1031@P26: Passengers/seats
+L1032@P26: (000s)
+L1033@P26: Year ending
+L1034@P26: Passengers
+L1035@P26: Seats
+L1036@P26: Load factor (%)
+L1037@P26: 18. Cairns - Melbourne (a)
+L1038@P26: Moving annual data
+L1039@P26: YE Jun 2025 YE Jun 2026 % Change
+L1040@P26: Passengers carried (000s) 856.0 853.7 -0.3
+L1041@P26: Seats (000s) 985.8 984.5 -0.1
+L1042@P26: Load factor % 86.8 86.7 -0.1 *
+L1043@P26: Aircraft trips 5,126 5,156 0.6
+L1044@P26: * percentage point difference
+L1045@P26: graph needed here
+L1046@P26: (a) July 2020 moving annuals are not available for release
+L1047@P26: 55
+L1048@P26: 65
+L1049@P26: 75
+L1050@P26: 85
+L1051@P26: 95
+L1052@P26:  0
+L1053@P26:  300
+L1054@P26:  600
+L1055@P26:  900
+L1056@P26: 1 200
+L1057@P26: Passengers/seats Load factor (%)
+L1058@P26: (000s)
+L1059@P26: Year ending
+L1060@P26: Passengers
+L1061@P26: Seats
+L1062@P26-27: Load factor (%)BITRE – AVIATION STATISTICS DOMESTIC ANNUAL
+L1063@P27: 22
+L1064@P27: 19. Hobart - Sydney
+L1065@P27: Moving annual data
+L1066@P27: YE Jun 2025 YE Jun 2026 % Change
+L1067@P27: Passengers carried (000s) 830.1 838.8 1.0
+L1068@P27: Seats (000s) 985.0 991.3 0.6
+L1069@P27: Load factor % 84.3 84.6 0.3 *
+L1070@P27: Aircraft trips 5,667 5,671 0.1
+L1071@P27: * percentage point difference
+L1072@P27: graph needed here
+L1073@P27: 55
+L1074@P27: 65
+L1075@P27: 75
+L1076@P27: 85
+L1077@P27: 95
+L1078@P27:  0
+L1079@P27:  200
+L1080@P27:  400
+L1081@P27:  600
+L1082@P27:  800
+L1083@P27: 1 000
+L1084@P27: 1 200
+L1085@P27: Load factor (%) Passengers/seats
+L1086@P27: (000s)
+L1087@P27: Year ending
+L1088@P27: Passengers
+L1089@P27: Seats
+L1090@P27: Load factor (%)
+L1091@P27: 20. Brisbane - Mackay
+L1092@P27: Moving annual data
+L1093@P27: YE Jun 2025 YE Jun 2026 % Change
+L1094@P27: Passengers carried (000s) 783.0 828.2 5.8
+L1095@P27: Seats (000s) 989.2 1,090.6 10.3
+L1096@P27: Load factor % 79.2 75.9 -3.2 *
+L1097@P27: Aircraft trips 7,410 8,416 13.6
+L1098@P27: * percentage point difference
+L1099@P27: graph needed here
+L1100@P27: 55
+L1101@P27: 65
+L1102@P27: 75
+L1103@P27: 85
+L1104@P27: 95
+L1105@P27:  0
+L1106@P27:  300
+L1107@P27:  600
+L1108@P27:  900
+L1109@P27: 1 200
+L1110@P27: Load factor (%)
+L1111@P27: Passengers/seats
+L1112@P27: (000s)
+L1113@P27: Year ending
+L1114@P27: Passengers
+L1115@P27: Seats
+L1116@P27-28: Load factor (%)BITRE – AVIATION STATISTICS DOMESTIC ANNUAL
+L1117@P28: 23
+L1118@P28: TOP FIFTY REGIONAL AIRPORTS
+L1119@P28: Table 7: Top fifty regional airports (000s) — passenger movements, annual
+L1120@P28: Airport YE Jun 2025 YE Jun 2026 % Change
+L1121@P28: 1 Cairns 4 120.5 4 127.4 0.2
+L1122@P28: 2 Hobart 2 801.8 2 895.9 3.4
+L1123@P28: 3 Townsville 1 642.0 1 663.4 1.3
+L1124@P28: 4 Darwin 1 628.0 1 637.0 0.6
+L1125@P28: 5 Launceston 1 433.6 1 477.7 3.1
+L1126@P28: 6 Newcastle 1 183.7 1 248.8 5.5
+L1127@P28: 7 Mackay 902.5 933.9 3.5
+L1128@P28: 8 Karratha 657.7 734.9 11.7
+L1129@P28: 9 Rockhampton 644.7 645.0 0.0
+L1130@P28: 10 Ballina 612.1 585.7 -4.3
+L1131@P28: 11 Proserpine 520.7 575.9 10.6
+L1132@P28: 12 Port Hedland 491.1 517.1 5.3
+L1133@P28: 13 Hamilton Island 489.1 484.9 -0.8
+L1134@P28: 14 Broome 444.3 455.5 2.5
+L1135@P28: 15 Newman 430.4 448.1 4.1
+L1136@P28: 16 Kalgoorlie 374.4 437.4 16.8
+L1137@P28: 17 Alice Springs 358.3 368.8 2.9
+L1138@P28: 18 Ayers Rock 345.2 351.2 1.7
+L1139@P28: 19 Coffs Harbour 252.0 263.9 4.7
+L1140@P28: 20 Mount Isa 239.5 231.7 -3.2
+L1141@P28: 21 Hervey Bay 208.2 228.6 9.8
+L1142@P28: 22 Paraburdoo 275.5 228.3 -17.1
+L1143@P28: 23 Albury 223.1 225.8 1.2
+L1144@P28: 24 Wagga Wagga 213.1 224.5 5.4
+L1145@P28: 25 Dubbo 205.2 217.9 6.2
+L1146@P28: 26 Gladstone 221.5 217.4 -1.9
+L1147@P28: 27 Port Macquarie 190.5 197.5 3.7
+L1148@P28: 28 Emerald 188.8 190.0 0.6
+L1149@P28: 29 Mildura 189.8 184.3 -2.9
+L1150@P28: 30 Port Lincoln 167.1 168.8 1.0
+L1151@P28: 31 Tamworth 160.8 158.6 -1.4
+L1152@P28: 32 Devonport 136.0 146.5 7.7
+L1153@P28: 33 Bundaberg 140.8 141.0 0.1
+L1154@P28: 34 Kununurra 140.0 133.8 -4.4
+L1155@P28: 35 Orange 113.4 132.7 17.1
+L1156@P28: 36 Geraldton 126.3 130.4 3.3
+L1157@P28: 37 Thursday Island 120.2 116.4 -3.2
+L1158@P28: 38 Armidale 101.6 111.8 10.1
+L1159@P28: 39 Olympic Dam 101.8 104.6 2.8
+L1160@P28: 40 Weipa 96.5 100.2 3.8
+L1161@P28: 41 Learmonth 112.3 100.2 -10.8
+L1162@P28: 42 Busselton 94.9 95.2 0.4
+L1163@P28: 43 Moranbah 107.6 92.4 -14.1
+L1164@P28: 44 Gove 88.8 83.4 -6.1
+L1165@P28: 45 Burnie 80.3 82.4 2.7
+L1166@P28: 46 Merimbula 68.4 74.6 9.1
+L1167@P28: 47 Griffith 74.7 73.5 -1.6
+L1168@P28: 48 Mount Gambier 71.0 71.5 0.7
+L1169@P28: 49 Albany 67.5 65.8 -2.5
+L1170@P28: 50 Roma 61.3 62.5 1.8
+L1171@P28: Total top 50 regional airports 23,718.4 24,244.7 2.2
+L1172@P28: Total regional airports 25,131.2 25,633.8 2.0
+L1173@P28: Total domestic network 118,912.6 121,506.3 2.2
+L1174@P28: Note: Airport passenger movement numbers are the sum of passenger arrivals and departures at each airport.
+L1175@P28: Regional airports are defined as airports which are, according to the Aus tralian Bureau of Statis tics
+L1176@P28-29: "The Australian Statistical Geography Standard (ASGS)", not based in Major Urban areas. Charter
+L1177@P29: 24
+L1178@P29: DOMESTIC CHARTER ACTIVITY
+L1179@P29: Table 8: Charter passengers carried and aircraft trips - annual activity (000s)
+L1180@P29: YE Jun 2025 YE Jun 2026 % Change
+L1181@P29: Total domestic charter passengers 4 311.1 4 562.2 5.8
+L1182@P29: Total domestic charter aircraft trips 74.0 77.0 4.1
+L1183@P29: Note: Helicopter, joyflights and sightseeing charter flights not included.
+L1184@P29: Table 9: Domestic airports - charter activity - annual activity (000s)
+L1185@P29: YE Jun 2025 YE Jun 2026 % Change
+L1186@P29: Total domestic charter passenger movements 8 622.3 9 124.5 5.8
+L1187@P29: Total domestic charter aircraft movements 147.9 154.1 4.1
+L1188@P29: Perth airport charter passenger movements 3 072.4 3 230.2 5.1
+L1189@P29: Perth airport charter aircraft movements 45.2 46.7 3.5
+L1190@P29: Note: Helicopter, joyflights and sightseeing charter flights not included.
+L1191@P29-30: Charter passenger and aircraft movement numbers are the sum of arrivals and departures at each airport.25
+L1192@P30: DEFINITIONS
+L1193@P30: Aircraft Trips The number of flight stages. A return flight counts as two
+L1194@P30: aircraft trips.
+L1195@P30: Airport Movements Airport movements (passenger and cargo) are measured
+L1196@P30: once on arrival and once on departure. Each domestic trip
+L1197@P30: generates two movements at airports. For example, a trip
+L1198@P30: from Melbourne to Sydney will be counted twice, as a
+L1199@P30: departure at Melbourne and as a arrival at Sydney. At the
+L1200@P30: national level, the sum of all domestic airport traffic will
+L1201@P30: therefore be equal to twice the number of trips undertaken.
+L1202@P30: Available Seat Kilometres
+L1203@P30: (ASKs)
+L1204@P30: Calculated by multiplying the number of seats available on
+L1205@P30: each flight stage, by the distance in kilometres between the
+L1206@P30: ports. The distances used are Great Circle Distances.
+L1207@P30: City-Pair The ports shown make up the city-pair route. Passenger
+L1208@P30: movements shown for a city pair reflect total traffic in both
+L1209@P30: directions.
+L1210@P30: Flight Stage The operation of an aircraft from take-off to landing.
+L1211@P30: Load Factor The total revenue passenger kilometres performed as a
+L1212@P30: percentage of the total available seat kilometres.
+L1213@P30: Passengers Carried Revenue passengers carried.
+L1214@P30: Regular Public Transport
+L1215@P30: Services (RPT)
+L1216@P30: All air service operations in which aircraft are available for
+L1217@P30: the transport of members of the public and are conducted in
+L1218@P30: accordance with fixed schedules. It does not include charter
+L1219@P30: or other non-scheduled operations.
+L1220@P30: Revenue Passengers All passengers paying any fare. Frequent flyer redemption
+L1221@P30: travellers are regarded as revenue passengers.
+L1222@P30: Revenue Passenger
+L1223@P30: Kilometres (RPKs)
+L1224@P30: Calculated by multiplying the number of revenue
+L1225@P30: passengers travelling on each flight stage, by the distance in
+L1226@P30: kilometres between the ports. The distances used are Great
+L1227@P30: Circle Distances.
+L1228@P30: Traffic on board by stages The total of all traffic (revenue passengers) on each flight
+L1229@P30: stage between two directly connected airports.
+L1230@P30:  .. Not available for confidentiality or other reasons.
+L1231@P30:  NA Not applicable.

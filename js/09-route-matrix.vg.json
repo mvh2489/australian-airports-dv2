@@ -1,0 +1,164 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": "container",
+  "height": 385,
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
+  "config": {
+    "background": "transparent",
+    "font": "Arial",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelColor": "#516b79",
+      "titleColor": "#193c52",
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titlePadding": 12,
+      "gridColor": "#e3ecef",
+      "domain": false,
+      "tickColor": "#e3ecef",
+      "labelPadding": 6
+    },
+    "legend": {
+      "labelColor": "#516b79",
+      "titleColor": "#193c52",
+      "labelFontSize": 11,
+      "titleFontSize": 12,
+      "titlePadding": 8,
+      "titleLimit": 450,
+      "labelLimit": 200,
+      "padding": 10,
+      "orient": "bottom"
+    },
+    "title": {
+      "anchor": "start",
+      "fontSize": 15,
+      "color": "#193c52",
+      "fontWeight": 600
+    },
+    "text": {
+      "font": "Arial",
+      "color": "#193c52"
+    }
+  },
+  "data": {
+    "url": "data/matrix.json"
+  },
+  "encoding": {
+    "x": {
+      "field": "destination_iata",
+      "type": "ordinal",
+      "title": null,
+      "sort": [
+        "SYD",
+        "MEL",
+        "BNE",
+        "PER",
+        "ADL",
+        "OOL",
+        "CNS",
+        "CBR",
+        "HBA",
+        "DRW",
+        "LST",
+        "TSV"
+      ],
+      "axis": {
+        "orient": "top",
+        "labelAngle": 0
+      }
+    },
+    "y": {
+      "field": "origin_iata",
+      "type": "ordinal",
+      "title": null,
+      "sort": [
+        "SYD",
+        "MEL",
+        "BNE",
+        "PER",
+        "ADL",
+        "OOL",
+        "CNS",
+        "CBR",
+        "HBA",
+        "DRW",
+        "LST",
+        "TSV"
+      ]
+    },
+    "tooltip": [
+      {
+        "field": "origin",
+        "title": "Airport 1"
+      },
+      {
+        "field": "destination",
+        "title": "Airport 2"
+      },
+      {
+        "field": "status",
+        "title": "Coverage"
+      },
+      {
+        "field": "passengers",
+        "title": "Passenger trips, both directions",
+        "format": ","
+      }
+    ]
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "rect",
+        "fill": "#eef2f8",
+        "stroke": "#fff",
+        "strokeWidth": 2
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "isValid(datum.passengers)"
+        }
+      ],
+      "mark": {
+        "type": "rect",
+        "stroke": "#fff",
+        "strokeWidth": 2
+      },
+      "encoding": {
+        "color": {
+          "field": "passengers",
+          "type": "quantitative",
+          "title": "Passenger trips",
+          "scale": {
+            "type": "log",
+            "domain": [
+              150000,
+              8100000
+            ],
+            "range": [
+              "#dce7fb",
+              "#174b9e"
+            ]
+          },
+          "legend": {
+            "format": ".2s",
+            "values": [
+              200000,
+              1000000,
+              4000000,
+              8000000
+            ],
+            "gradientLength": 220
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 250" role="img" aria-labelledby="title desc">
+  <title id="title">Cleared for departure</title><desc id="desc">An original stylised illustration of an aircraft climbing above an airport terminal, runway and control tower.</desc>
+  <defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#c7ddff"/><stop offset="1" stop-color="#e8f2ff"/></linearGradient><linearGradient id="body" x2="0" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#c6dcf6"/></linearGradient></defs>
+  <rect width="860" height="250" fill="url(#sky)"/>
+  <circle cx="728" cy="54" r="33" fill="#e3ed9b"/><g fill="#fff" opacity=".65"><path d="M57 52h130a19 19 0 0 0-34-10 28 28 0 0 0-52 2A19 19 0 0 0 57 52Z"/><path d="M432 35h98a12 12 0 0 0-23-9 20 20 0 0 0-37 5 15 15 0 0 0-38 4Z"/></g>
+  <path d="M0 180q200-30 420-4t440-7v81H0Z" fill="#afc7bd"/><path d="M0 206h860v44H0Z" fill="#48617d"/><path d="M0 228h860" stroke="#dcef89" stroke-width="3" stroke-dasharray="28 22"/>
+  <g fill="#6d92be"><rect x="40" y="155" width="250" height="46" rx="2"/><path d="m28 155 27-13h228l22 13Z" fill="#2c507b"/><rect x="308" y="161" width="170" height="40"/><path d="M300 161h188l-15-11H318Z" fill="#4c719e"/></g>
+  <g stroke="#dce9f9" stroke-width="2"><path d="M56 159v32m21-32v32m21-32v32m21-32v32m21-32v32m21-32v32m21-32v32m21-32v32m21-32v32m21-32v32m21-32v32"/><path d="M320 171h147"/></g>
+  <g><path d="M534 201h22l-4-81h-14Z" fill="#7f9cbe"/><path d="m522 102 5 24h36l7-24Z" fill="#284c78"/><path d="M525 105h42l-4 11h-36Z" fill="#a2d2ec"/><path d="M519 102h54l-7-9h-40Z" fill="#365f90"/><path d="M546 93V73m-8 8h16" stroke="#365f90" stroke-width="3"/></g>
+  <g transform="translate(549 101) rotate(-12)">
+    <path d="m-228-4 64-5 74-8 158-3c50-1 80 9 96 20-16 10-46 15-89 15h-235l-68-8Z" fill="url(#body)" stroke="#a5bfdc" stroke-width="1.5"/>
+    <path d="m-177-8-31-63h24l52 60Z" fill="#2864eb"/><path d="m-199-58 12 23 12-2-17-21Z" fill="#dcef89"/>
+    <path d="m-70-12-19-45h19l63 44Z" fill="#aac7ee"/><path d="m-66 7-53 57h24L9 10Z" fill="#d7e7fa" stroke="#9ab6dc"/>
+    <path d="M-168 7H74q51 0 78-8" stroke="#2864eb" fill="none" stroke-width="4"/>
+    <path d="m110-12 21 5h-25l-9-6Z" fill="#274a72"/>
+    <g fill="#466d9e"><rect x="-131" y="-7" width="6" height="6" rx="2"/><rect x="-118" y="-8" width="6" height="6" rx="2"/><rect x="-105" y="-9" width="6" height="6" rx="2"/><rect x="-92" y="-10" width="6" height="6" rx="2"/><rect x="-79" y="-10" width="6" height="6" rx="2"/><rect x="-66" y="-10" width="6" height="6" rx="2"/><rect x="-53" y="-10" width="6" height="6" rx="2"/><rect x="-40" y="-10" width="6" height="6" rx="2"/><rect x="-27" y="-10" width="6" height="6" rx="2"/><rect x="-14" y="-10" width="6" height="6" rx="2"/><rect x="-1" y="-10" width="6" height="6" rx="2"/><rect x="12" y="-10" width="6" height="6" rx="2"/><rect x="25" y="-10" width="6" height="6" rx="2"/><rect x="38" y="-10" width="6" height="6" rx="2"/><rect x="51" y="-10" width="6" height="6" rx="2"/><rect x="64" y="-10" width="6" height="6" rx="2"/></g>
+    <path d="m-43 23 35-3q13 1 13 12l-43 5Z" fill="#7399c8"/><ellipse cx="1" cy="28" rx="5" ry="8" fill="#294c76"/>
+  </g>
+  <path d="M85 109q200-66 350-41" fill="none" stroke="#729ed7" stroke-width="1.5" stroke-dasharray="5 7"/>
+  <g fill="#dcef89"><circle cx="72" cy="211" r="2"/><circle cx="172" cy="211" r="2"/><circle cx="272" cy="211" r="2"/><circle cx="372" cy="211" r="2"/><circle cx="472" cy="211" r="2"/><circle cx="572" cy="211" r="2"/><circle cx="672" cy="211" r="2"/><circle cx="772" cy="211" r="2"/></g>
+</svg>

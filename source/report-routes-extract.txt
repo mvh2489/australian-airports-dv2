@@ -1,0 +1,451 @@
+Published numerical table extract. Source: https://www.bitre.gov.au/sites/default/files/documents/Domestic%20Aviation%20Activity%202025-26.pdf
+
+L319@P10: 41 Hamilton Island - Sydney 316.0 273.2 -13.6
+L320@P10: 42 Brisbane - Gladstone 333.4 322.9 -3.2
+L321@P10: 43 Coffs Harbour - Sydney 276.7 281.4 1.7
+L322@P10: 44 Adelaide - Canberra 268.9 282.6 5.1
+L323@P10: 45 Brisbane - Emerald 297.7 293.5 -1.4
+L324@P10: 46 Brisbane - Hamilton Island 204.7 233.7 14.2
+L325@P10: 47 Dubbo - Sydney 269.6 262.1 -2.8
+L326@P10: 48 Darwin - Perth 252.9 253.4 0.2
+L327@P10: 49 Canberra - Gold Coast 193.6 199.4 3.0
+L328@P10: 50 Sydney - Wagga Wagga 245.8 248.4 1.1
+L329@P10-11: (continued)BITRE – AVIATION STATISTICS DOMESTIC ANNUAL
+L330@P11: 6
+L331@P11: Table 2: (continued) Available seats (000s) — annual activity
+L332@P11: City-Pair YE Jun 2025 YE Jun 2026 % Change
+L333@P11: 51 Port Macquarie - Sydney 227.4 235.9 3.8
+L334@P11: 52 Adelaide - Port Lincoln 265.4 282.4 6.4
+L335@P11: 53 Albury - Sydney 217.8 218.7 0.4
+L336@P11: 54 Brisbane - Launceston 173.0 178.5 3.2
+L337@P11: 55 Melbourne - Mildura 208.4 226.5 8.7
+L338@P11: 56 Brisbane - Mount Isa 230.7 251.3 8.9
+L339@P11: 57 Devonport - Melbourne 185.9 205.7 10.6
+L340@P11: 58 Brisbane - Bundaberg 216.9 211.8 -2.3
+L341@P11: 59 Geraldton - Perth 219.5 228.4 4.0
+L342@P11: 60 Ayers Rock - Melbourne 147.1 138.7 -5.7
+L343@P11: 61 Adelaide - Alice Springs 152.0 137.0 -9.8
+L344@P11: 62 Orange - Sydney 163.5 162.4 -0.6 (a)
+L345@P11: Total domestic network 73,323.3 75,259.6 2.6
+L346@P11-12: (a) Orange - Sydney route included from May 2025. RPT network
+L347@P12: 7
+L348@P12: Table 3: Load factors (%) — annual activity
+L349@P12: City-Pair YE Jun 2025 YE Jun 2026 % Change
+L350@P12: 1 Melbourne - Sydney 85.7 85.4 -0.3
+L351@P12: 2 Brisbane - Sydney 86.6 86.2 -0.3
+L352@P12: 3 Brisbane - Melbourne 86.1 84.7 -1.4
+L353@P12: 4 Gold Coast - Sydney 87.9 89.0 1.1
+L354@P12: 5 Adelaide - Melbourne 85.4 83.7 -1.6
+L355@P12: 6 Gold Coast - Melbourne 89.0 90.5 1.6
+L356@P12: 7 Melbourne - Perth 86.3 85.9 -0.4
+L357@P12: 8 Adelaide - Sydney 82.7 80.9 -1.8
+L358@P12: 9 Perth - Sydney 86.3 83.7 -2.6
+L359@P12: 10 Hobart - Melbourne 87.0 84.6 -2.3
+L360@P12: 11 Brisbane - Cairns 87.8 87.6 -0.2
+L361@P12: 12 Brisbane - Perth 85.2 83.1 -2.1
+L362@P12: 13 Brisbane - Townsville 83.8 80.4 -3.4
+L363@P12: 14 Canberra - Melbourne 77.3 75.7 -1.6
+L364@P12: 15 Adelaide - Brisbane 85.1 83.0 -2.1
+L365@P12: 16 Cairns - Sydney 88.3 88.2 -0.1
+L366@P12: 17 Launceston - Melbourne 85.3 84.9 -0.4
+L367@P12: 18 Cairns - Melbourne 86.8 86.7 -0.1
+L368@P12: 19 Hobart - Sydney 84.3 84.6 0.3
+L369@P12: 20 Brisbane - Mackay 79.2 75.9 -3.2
+L370@P12: 21 Sunshine Coast - Sydney 84.9 86.3 1.3
+L371@P12: 22 Melbourne - Sunshine Coast 88.1 89.7 1.6
+L372@P12: 23 Adelaide - Perth 82.1 79.9 -2.1
+L373@P12: 24 Karratha - Perth 69.7 69.7 -0.1
+L374@P12: 25 Brisbane - Canberra 77.2 75.7 -1.5
+L375@P12: 26 Brisbane - Rockhampton 81.4 82.0 0.6
+L376@P12: 27 Canberra - Sydney 64.5 66.6 2.1
+L377@P12: 28 Brisbane - Newcastle 84.4 82.3 -2.1
+L378@P12: 29 Perth - Port Hedland 64.5 63.4 -1.1
+L379@P12: 30 Ballina - Sydney 86.9 86.8 -0.1
+L380@P12: 31 Melbourne - Newcastle 85.1 85.0 -0.1
+L381@P12: 32 Newman - Perth 63.1 60.9 -2.2
+L382@P12: 33 Kalgoorlie - Perth 55.4 61.2 5.8
+L383@P12: 34 Broome - Perth 76.3 71.5 -4.8
+L384@P12: 35 Launceston - Sydney 88.3 86.2 -2.1
+L385@P12: 36 Brisbane - Darwin 84.7 82.6 -2.1
+L386@P12: 37 Brisbane - Hobart 90.1 88.4 -1.7
+L387@P12: 38 Darwin - Melbourne 81.4 82.2 0.8
+L388@P12: 39 Adelaide - Gold Coast 89.8 91.8 2.0
+L389@P12: 40 Brisbane - Proserpine 89.3 90.3 1.0
+L390@P12: 41 Hamilton Island - Sydney 79.9 84.6 4.8
+L391@P12: 42 Brisbane - Gladstone 66.4 67.4 1.0
+L392@P12: 43 Coffs Harbour - Sydney 74.1 73.1 -1.0
+L393@P12: 44 Adelaide - Canberra 71.8 69.1 -2.7
+L394@P12: 45 Brisbane - Emerald 63.4 65.1 1.7
+L395@P12: 46 Brisbane - Hamilton Island 78.9 80.0 1.1
+L396@P12: 47 Dubbo - Sydney 63.3 69.6 6.4
+L397@P12: 48 Darwin - Perth 74.7 72.0 -2.7
+L398@P12: 49 Canberra - Gold Coast 89.2 90.8 1.7
+L399@P12: 50 Sydney - Wagga Wagga 66.4 69.5 3.1
+L400@P12-13: (continued)BITRE – AVIATION STATISTICS DOMESTIC ANNUAL
+L401@P13: 8
+L402@P13: Table 3: (continued) Load factors (%) — annual activity
+L403@P13: City-Pair YE Jun 2025 YE Jun 2026 % Change
+L404@P13: 51 Port Macquarie - Sydney 72.3 71.9 -0.3
+L405@P13: 52 Adelaide - Port Lincoln 62.9 59.7 -3.2
+L406@P13: 53 Albury - Sydney 71.8 73.8 2.0
+L407@P13: 54 Brisbane - Launceston 89.4 88.7 -0.7
+L408@P13: 55 Melbourne - Mildura 72.5 66.6 -5.9
+L409@P13: 56 Brisbane - Mount Isa 66.1 59.9 -6.2
+L410@P13: 57 Devonport - Melbourne 73.0 71.2 -1.9
+L411@P13: 58 Brisbane - Bundaberg 64.8 66.5 1.7
+L412@P13: 59 Geraldton - Perth 54.4 53.7 -0.6
+L413@P13: 60 Ayers Rock - Melbourne 79.0 86.2 7.2
+L414@P13: 61 Adelaide - Alice Springs 69.3 74.8 5.5
+L415@P13: 62 Orange - Sydney 52.4 61.4 9.0 (a)
+L416@P13: Total domestic network 82.9 82.2 -0.7
+L417@P13-14: (a) Orange - Sydney route included from May 2025. RPT network
+L418@P14: 9
+L419@P14: Table 4: Aircraft trips (a) — annual activity
+L420@P14: City-Pair YE Jun 2025 YE Jun 2026 % Change
+L421@P14: 1 Melbourne - Sydney 53,987 54,068 0.2
+L422@P14: 2 Brisbane - Sydney 30,217 30,417 0.7
+L423@P14: 3 Brisbane - Melbourne 24,824 26,364 6.2
+L424@P14: 4 Gold Coast - Sydney 15,930 16,628 4.4
+L425@P14: 5 Adelaide - Melbourne 16,235 17,276 6.4
+L426@P14: 6 Gold Coast - Melbourne 12,794 13,281 3.8
+L427@P14: 7 Melbourne - Perth 13,326 13,775 3.4
+L428@P14: 8 Adelaide - Sydney 13,463 13,793 2.5
+L429@P14: 9 Perth - Sydney 10,571 11,080 4.8
+L430@P14: 10 Hobart - Melbourne 9,505 9,807 3.2
+L431@P14: 11 Brisbane - Cairns 10,531 10,605 0.7
+L432@P14: 12 Brisbane - Perth 7,582 7,788 2.7
+L433@P14: 13 Brisbane - Townsville 9,048 9,125 0.9
+L434@P14: 14 Canberra - Melbourne 8,202 8,627 5.2
+L435@P14: 15 Adelaide - Brisbane 7,827 8,107 3.6
+L436@P14: 16 Cairns - Sydney 5,574 5,579 0.1
+L437@P14: 17 Launceston - Melbourne 7,518 7,991 6.3
+L438@P14: 18 Cairns - Melbourne 5,126 5,156 0.6
+L439@P14: 19 Hobart - Sydney 5,667 5,671 0.1
+L440@P14: 20 Brisbane - Mackay 7,410 8,416 13.6
+L441@P14: 21 Sunshine Coast - Sydney 5,109 5,438 6.4
+L442@P14: 22 Melbourne - Sunshine Coast 4,384 4,656 6.2
+L443@P14: 23 Adelaide - Perth 4,857 5,172 6.5
+L444@P14: 24 Karratha - Perth 5,576 6,144 10.2
+L445@P14: 25 Brisbane - Canberra 6,719 6,982 3.9
+L446@P14: 26 Brisbane - Rockhampton 7,976 7,970 -0.1
+L447@P14: 27 Canberra - Sydney 14,451 14,185 -1.8
+L448@P14: 28 Brisbane - Newcastle 5,126 5,353 4.4
+L449@P14: 29 Perth - Port Hedland 4,612 4,903 6.3
+L450@P14: 30 Ballina - Sydney 3,853 3,644 -5.4
+L451@P14: 31 Melbourne - Newcastle 3,565 3,587 0.6
+L452@P14: 32 Newman - Perth 4,158 4,428 6.5
+L453@P14: 33 Kalgoorlie - Perth 4,593 4,818 4.9
+L454@P14: 34 Broome - Perth 3,153 3,335 5.8
+L455@P14: 35 Launceston - Sydney 2,405 2,570 6.9
+L456@P14: 36 Brisbane - Darwin 2,488 2,398 -3.6
+L457@P14: 37 Brisbane - Hobart 2,178 2,291 5.2
+L458@P14: 38 Darwin - Melbourne 2,016 1,998 -0.9
+L459@P14: 39 Adelaide - Gold Coast 1,579 1,652 4.6
+L460@P14: 40 Brisbane - Proserpine 1,983 1,845 -7.0
+L461@P14: 41 Hamilton Island - Sydney 1,791 1,552 -13.3
+L462@P14: 42 Brisbane - Gladstone 3,798 3,795 -0.1
+L463@P14: 43 Coffs Harbour - Sydney 4,341 4,386 1.0
+L464@P14: 44 Adelaide - Canberra 2,472 2,689 8.8
+L465@P14: 45 Brisbane - Emerald 3,890 3,879 -0.3
+L466@P14: 46 Brisbane - Hamilton Island 1,491 1,565 5.0
+L467@P14: 47 Dubbo - Sydney 5,102 4,768 -6.5
+L468@P14: 48 Darwin - Perth 1,471 1,512 2.8
+L469@P14: 49 Canberra - Gold Coast 1,078 1,096 1.7
+L470@P14: 50 Sydney - Wagga Wagga 4,387 4,334 -1.2
+L471@P14-15: (continued)BITRE – AVIATION STATISTICS DOMESTIC ANNUAL
+L472@P15: 10
+L473@P15: Table 4: (continued) Aircraft trips (a) — annual activity
+L474@P15: City-Pair YE Jun 2025 YE Jun 2026 % Change
+L475@P15: 51 Port Macquarie - Sydney 3,835 3,962 3.3
+L476@P15: 52 Adelaide - Port Lincoln 6,110 5,651 -7.5
+L477@P15: 53 Albury - Sydney 3,956 3,826 -3.3
+L478@P15: 54 Brisbane - Launceston 997 998 0.1
+L479@P15: 55 Melbourne - Mildura 4,461 4,275 -4.2
+L480@P15: 56 Brisbane - Mount Isa 2,434 2,206 -9.4
+L481@P15: 57 Devonport - Melbourne 3,543 3,301 -6.8
+L482@P15: 58 Brisbane - Bundaberg 3,526 3,451 -2.1
+L483@P15: 59 Geraldton - Perth 2,439 2,455 0.7
+L484@P15: 60 Ayers Rock - Melbourne 823 763 -7.3
+L485@P15: 61 Adelaide - Alice Springs 1,808 1,616 -10.6
+L486@P15: 62 Orange - Sydney 3,116 2,729 -12.4 (b)
+L487@P15: Total domestic network 601,016 602,870 0.3
+L488@P15: (a) Includes RPT Cargo flights.
+L489@P15-16: (b) Orange - Sydney route included from May 2025. Top ten airports
+L490@P16: 11
+L491@P16: TOP TEN AIRPORTS – PASSENGER MOVEMENTS
+L492@P16: Table 5: Top ten airports, RPT passenger movements (000s) — annual activity
+L493@P16: Airport YE Jun 2025 YE Jun 2026 % Change % of Total
+L494@P16: 1 Sydney 25,194.9 25,502.4 1.2 21.0
+L495@P16: 2 Melbourne 24,112.8 24,614.7 2.1 20.3
+L496@P16: 3 Brisbane 17,309.4 17,743.6 2.5 14.6
+L497@P16: 4 Perth 9,165.1 9,405.9 2.6 7.7
+L498@P16: 5 Adelaide 7,409.1 7,611.4 2.7 6.3
+L499@P16: 6 Gold Coast 5,374.6 5,675.1 5.6 4.7
+L500@P16: 7 Cairns 4,120.5 4,127.4 0.2 3.4
+L501@P16: 8 Hobart 2,801.8 2,895.9 3.4 2.4
+L502@P16: 9 Canberra 2,766.5 2,727.4 -1.4 2.2
+L503@P16: 10 Sunshine Coast 1,588.8 1,706.0 7.4 1.4
+L504@P16: Total top ten airports 99,843.4 102,009.7 2.2 84.0
+L505@P16: Total domestic network 118,912.6 121,506.3 2.2 100.0
+L506@P16: Note: Airport passenger movement numbers are the sum of passenger arrivals and departures at each airport.
+L507@P16: 0
+L508@P16: 5
+L509@P16: 10
+L510@P16: 15
+L511@P16: 20
+L512@P16: 25
+L513@P16: 30
+L514@P16: (millions)
+L515@P16: Top ten airports, RPT passenger movements
+L516@P16: YE Jun 2025 YE Jun 2026
+L517@P16: (traffic on board)
+L518@P16: (millions)
+L519@P16: Top three airports, domestic passenger movements
+L520@P16: Brisbane Melbourne Sydney
+L521@P16: Year ending
+L522@P16-17: (moving annual totals - traffic on board)BITRE – AVIATION STATISTICS DOMESTIC ANNUAL
+L523@P17: 12
+L524@P17: TOP FIVE AIRPORTS – CARGO MOVEMENTS
+L525@P17: Table 6: Top five airports, domestic RPT cargo movements (000s tonnes) - annual activity
+L526@P17: Airport YE Jun 2025 YE Jun 2026 % Change % of Total
+L527@P17: 1 Melbourne 88.1 89.3 1.3 27.7
+L528@P17: 2 Sydney 67.9 68.0 0.1 21.1
+L529@P17: 3 Brisbane 57.0 58.1 1.9 18.0
+L530@P17: 4 Perth 36.3 35.9 -1.2 11.1
+L531@P17: 5 Adelaide 17.2 17.4 1.1 5.4
+L532@P17: Total top five airports 266.6 268.7 0.8 83.4
+L533@P17: Total domestic network 321.1 321.9 0.3 100.0
+L534@P17: Note: Airport cargo tonnes are the sum of cargo tonnes on arrivals and departures at each airport.
+L535@P17: 0
+L536@P17: 20
+L537@P17: 40
+L538@P17: 60
+L539@P17: 80
+L540@P17: 100
+L541@P17: Melbourne Sydney Brisbane Perth Adelaide
+L542@P17: Tonnes (000s)
+L543@P17: Top five airports, cargo movements
+L544@P17: YE Jun 2025 YE Jun 2026
+L545@P17: (Domestic cargo traffic - traffic on board)
+L546@P17: Tonnes (000s)
+L547@P17: Total domestic network - cargo movements
+L548@P17: Year ending
+L549@P17-18: (moving annual totals- traffic on board)Top twenty routes
+L550@P18: 13
+L551@P18: TOP TWENTY ROUTES
+L552@P18: 1. Melbourne - Sydney
+L553@P18: Moving annual data
+L554@P18: YE Jun 2025 YE Jun 2026 % Change
+L555@P18: Passengers carried (000s) 8,055.8 8,080.5 0.3
+L556@P18: Seats (000s) 9,403.0 9,459.7 0.6
+L557@P18: Load factor % 85.7 85.4 -0.3 *
+L558@P18: Aircraft trips 53,987 54,068 0.2
+L559@P18: * percentage point difference
+L560@P18:  55
+L561@P18:  60
+L562@P18:  65
+L563@P18:  70
+L564@P18:  75
+L565@P18:  80
+L566@P18:  85
+L567@P18:  90
+L568@P18:  95
+L569@P18:  0
+L570@P18: 2 000
+L571@P18: 4 000
+L572@P18: 6 000
+L573@P18: 8 000
+L574@P18: 10 000
+L575@P18: 12 000
+L576@P18: Passengers/seats Load factor (%)
+L577@P18: (000s)
+L578@P18: Year ending
+L579@P18: Passengers
+L580@P18: Seats
+L581@P18: Load factor (%)
+L582@P18: 2. Brisbane - Sydney
+L583@P18: Moving annual data
+L584@P18: YE Jun 2025 YE Jun 2026 % Change
+L585@P18: Passengers carried (000s) 4,358.8 4,429.2 1.6
+L586@P18: Seats (000s) 5,035.5 5,136.8 2.0
+L587@P18: Load factor % 86.6 86.2 -0.3 *
+L588@P18: Aircraft trips 30,217 30,417 0.7
+L589@P18: * percentage point difference
+L590@P18: 55
+L591@P18: 60
+L592@P18: 65
+L593@P18: 70
+L594@P18: 75
+L595@P18: 80
+L596@P18: 85
+L597@P18: 90
+L598@P18: 95
+L599@P18:  0
+L600@P18: 1 000
+L601@P18: 2 000
+L602@P18: 3 000
+L603@P18: 4 000
+L604@P18: 5 000
+L605@P18: 6 000
+L606@P18: Load factor (%)
+L607@P18: Passengers/seats
+L608@P18: (000s)
+L609@P18: Year ending
+L610@P18-19: Passengers Seats Load factor (%)BITRE – AVIATION STATISTICS DOMESTIC ANNUAL
+L611@P19: 14
+L612@P19: 3. Brisbane - Melbourne
+L613@P19: Moving annual data
+L614@P19: YE Jun 2025 YE Jun 2026 % Change
+L615@P19: Passengers carried (000s) 3,553.1 3,696.3 4.0
+L616@P19: Seats (000s) 4,126.7 4,366.0 5.8
+L617@P19: Load factor % 86.1 84.7 -1.4
+L618@P19: Aircraft trips 24,824 26,364 6.2
+L619@P19: * percentage point difference
+L620@P19: graph needed here
+L621@P19: 55
+L622@P19: 60
+L623@P19: 65
+L624@P19: 70
+L625@P19: 75
+L626@P19: 80
+L627@P19: 85
+L628@P19: 90
+L629@P19: 95
+L630@P19:  0
+L631@P19: 1 000
+L632@P19: 2 000
+L633@P19: 3 000
+L634@P19: 4 000
+L635@P19: 5 000
+L636@P19: Load factor (%)
+L637@P19: Passengers/seats
+L638@P19: (000s)
+L639@P19: Year ending
+L640@P19: Passengers
+L641@P19: Seats
+L642@P19: Load factor (%)
+L643@P19: 4. Gold Coast - Sydney (a)
+L644@P19: Moving annual data
+L645@P19: YE Jun 2025 YE Jun 2026 % Change
+L646@P19: Passengers carried (000s) 2,465.8 2,610.1 5.9
+L647@P19: Seats (000s) 2,805.2 2,933.3 4.6
+L648@P19: Load factor % 87.9 89.0 1.1
+L649@P19: Aircraft trips 15,930 16,628 4.4
+L650@P19: * percentage point difference
+L651@P19: graph needed here
+L652@P19: (a) May, September and October 2020 and January and August to November 2021 moving annual totals
+L653@P19:  not available for release.
+L654@P19: 65
+L655@P19: 70
+L656@P19: 75
+L657@P19: 80
+L658@P19: 85
+L659@P19: 90
+L660@P19: 95
+L661@P19:  0
+L662@P19:  500
+L663@P19: 1 000
+L664@P19: 1 500
+L665@P19: 2 000
+L666@P19: 2 500
+L667@P19: 3 000
+L668@P19: 3 500
+L669@P19: Load factor (%)
+L670@P19: Passengers/seats
+L671@P19: (000s)
+L672@P19: Year ending
+L673@P19: Passengers
+L674@P19: Seats
+L675@P19-20: Load factor (%)Top twenty routes
+L676@P20: 15
+L677@P20: 5. Adelaide - Melbourne
+L678@P20: Moving annual data
+L679@P20: YE Jun 2025 YE Jun 2026 % Change
+L680@P20: Passengers carried (000s) 2,323.7 2,414.5 3.9
+L681@P20: Seats (000s) 2,722.0 2,883.7 5.9
+L682@P20: Load factor % 85.4 83.7 -1.6 *
+L683@P20: Aircraft trips 16,235 17,276 6.4
+L684@P20: * percentage point difference
+L685@P20: graph needed here
+L686@P20: 55
+L687@P20: 65
+L688@P20: 75
+L689@P20: 85
+L690@P20: 95
+L691@P20:  0
+L692@P20:  500
+L693@P20: 1 000
+L694@P20: 1 500
+L695@P20: 2 000
+L696@P20: 2 500
+L697@P20: 3 000
+L698@P20: 3 500
+L699@P20: Load factor (%) Passengers/seats
+L700@P20: (000s)
+L701@P20: Year ending
+L702@P20: Passengers Seats
+L703@P20: Load factor (%)
+L704@P20: 6. Gold Coast - Melbourne (a)
+L705@P20: Moving annual data
+L706@P20: YE Jun 2025 YE Jun 2026 % Change
+L707@P20: Passengers carried (000s) 2,106.6 2,216.7 5.2
+L708@P20: Seats (000s) 2,368.2 2,449.2 3.4
+L709@P20: Load factor % 89.0 90.5 1.6 *
+L710@P20: Aircraft trips 12,794 13,281 3.8
+L711@P20: * percentage point difference
+L712@P20: graph needed here
+L713@P20: (a) July and November 2020 and August to November 2021 moving annuals are not available for release.
+L714@P20: 55
+L715@P20: 60
+L716@P20: 65
+L717@P20: 70
+L718@P20: 75
+L719@P20: 80
+L720@P20: 85
+L721@P20: 90
+L722@P20: 95
+L723@P20:  0
+L724@P20:  500
+L725@P20: 1 000
+L726@P20: 1 500
+L727@P20: 2 000
+L728@P20: 2 500
+L729@P20: 3 000
+L730@P20: Load factor (%)
+L731@P20: Passengers/seats
+L732@P20: (000s)
+L733@P20: Year ending
+L734@P20: Passengers
+L735@P20: Seats
+L736@P20-21: Load factor (%)BITRE – AVIATION STATISTICS DOMESTIC ANNUAL
+L737@P21: 16
+L738@P21: 7. Melbourne - Perth
+L739@P21: Moving annual data
+L740@P21: YE Jun 2025 YE Jun 2026 % Change
+L741@P21: Passengers carried (000s) 2,066.2 2,102.4 1.8
+L742@P21: Seats (000s) 2,395.3 2,448.0 2.2
+L743@P21: Load factor % 86.3 85.9 -0.4 *
+L744@P21: Aircraft trips 13,326 13,775 3.4
+L745@P21: * percentage point difference
+L746@P21: graph needed here
+L747@P21: 40
+L748@P21: 50
+L749@P21: 60
+L750@P21: 70
+L751@P21: 80
+L752@P21: 90
+L753@P21:  0
+L754@P21:  500
+L755@P21: 1 000
+L756@P21: 1 500
+L757@P21: 2 000
+L758@P21: 2 500
+L759@P21: 3 000
+L760@P21: Load factor (%)
+L761@P21: Passengers/seats
+L762@P21: (000s)
+L763@P21: Year ending
+L764@P21: Passengers
+L765@P21: Seats
+L766@P21: Load factor (%)
+L767@P21: 8. Adelaide - Sydney (a)

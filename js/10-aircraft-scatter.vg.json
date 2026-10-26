@@ -1,0 +1,152 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": "container",
+  "height": 375,
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
+  "config": {
+    "background": "transparent",
+    "font": "Arial",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelColor": "#516b79",
+      "titleColor": "#193c52",
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titlePadding": 12,
+      "gridColor": "#e3ecef",
+      "domain": false,
+      "tickColor": "#e3ecef",
+      "labelPadding": 6
+    },
+    "legend": {
+      "labelColor": "#516b79",
+      "titleColor": "#193c52",
+      "labelFontSize": 11,
+      "titleFontSize": 12,
+      "titlePadding": 8,
+      "titleLimit": 450,
+      "labelLimit": 200,
+      "padding": 10,
+      "orient": "bottom"
+    },
+    "title": {
+      "anchor": "start",
+      "fontSize": 15,
+      "color": "#193c52",
+      "fontWeight": 600
+    },
+    "text": {
+      "font": "Arial",
+      "color": "#193c52"
+    }
+  },
+  "data": {
+    "url": "data/routes.json"
+  },
+  "transform": [
+    {
+      "filter": "datum.year == 2026"
+    }
+  ],
+  "layer": [
+    {
+      "mark": {
+        "type": "circle",
+        "color": "#2678a8",
+        "size": 55,
+        "opacity": 0.7,
+        "stroke": "#fff",
+        "strokeWidth": 0.5
+      },
+      "encoding": {
+        "x": {
+          "field": "flights",
+          "type": "quantitative",
+          "title": "Aircraft trips (including cargo)",
+          "scale": {
+            "domain": [
+              0,
+              60000
+            ]
+          },
+          "axis": {
+            "format": ".2s",
+            "tickCount": 5
+          }
+        },
+        "y": {
+          "field": "passengers",
+          "type": "quantitative",
+          "title": "Passenger trips",
+          "scale": {
+            "domain": [
+              0,
+              9000000
+            ]
+          },
+          "axis": {
+            "format": ".2s",
+            "tickCount": 5
+          }
+        },
+        "tooltip": [
+          {
+            "field": "route",
+            "title": "Route"
+          },
+          {
+            "field": "passengers",
+            "title": "Passenger trips",
+            "format": ","
+          },
+          {
+            "field": "flights",
+            "title": "Aircraft trips (including cargo)",
+            "format": ","
+          },
+          {
+            "field": "seats",
+            "title": "Available seats",
+            "format": ","
+          }
+        ]
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.rank <= 3"
+        },
+        {
+          "calculate": "datum.origin_iata + ' – ' + datum.destination_iata",
+          "as": "label"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "dx": -8,
+        "dy": -9,
+        "fontSize": 11
+      },
+      "encoding": {
+        "x": {
+          "field": "flights",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "passengers",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "label"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": "container",
+  "height": 365,
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
+  "config": {
+    "background": "transparent",
+    "font": "Arial",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelColor": "#516b79",
+      "titleColor": "#193c52",
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titlePadding": 12,
+      "gridColor": "#e3ecef",
+      "domain": false,
+      "tickColor": "#e3ecef",
+      "labelPadding": 6
+    },
+    "legend": {
+      "labelColor": "#516b79",
+      "titleColor": "#193c52",
+      "labelFontSize": 11,
+      "titleFontSize": 12,
+      "titlePadding": 8,
+      "titleLimit": 450,
+      "labelLimit": 200,
+      "padding": 10,
+      "orient": "bottom"
+    },
+    "title": {
+      "anchor": "start",
+      "fontSize": 15,
+      "color": "#193c52",
+      "fontWeight": 600
+    },
+    "text": {
+      "font": "Arial",
+      "color": "#193c52"
+    }
+  },
+  "data": {
+    "url": "data/airport_history.json"
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "rect",
+        "stroke": "#fff",
+        "strokeWidth": 2
+      },
+      "encoding": {
+        "x": {
+          "field": "fy",
+          "type": "ordinal",
+          "title": "Financial year",
+          "sort": "ascending",
+          "axis": {
+            "labelAngle": {
+              "expr": "width < 650 ? -45 : 0"
+            },
+            "labelFontSize": 11
+          }
+        },
+        "y": {
+          "field": "airport",
+          "type": "nominal",
+          "title": null,
+          "sort": [
+            "Sydney",
+            "Melbourne",
+            "Brisbane",
+            "Perth",
+            "Adelaide",
+            "Gold Coast",
+            "Cairns",
+            "Canberra",
+            "Darwin",
+            "Hobart",
+            "Townsville"
+          ]
+        },
+        "color": {
+          "field": "index",
+          "type": "quantitative",
+          "title": "Share of 2018-19 traffic",
+          "scale": {
+            "domain": [
+              0,
+              0.5,
+              1,
+              1.3
+            ],
+            "range": [
+              "#eef3fc",
+              "#a7c2f3",
+              "#17459a",
+              "#102e65"
+            ],
+            "clamp": true
+          },
+          "legend": {
+            "format": ".0%",
+            "values": [
+              0,
+              0.5,
+              1,
+              1.3
+            ],
+            "gradientLength": 260
+          }
+        },
+        "tooltip": [
+          {
+            "field": "airport",
+            "title": "Airport"
+          },
+          {
+            "field": "fy",
+            "title": "Financial year"
+          },
+          {
+            "field": "passengers",
+            "title": "Domestic + international movements",
+            "format": ","
+          },
+          {
+            "field": "index",
+            "title": "Compared with 2018-19",
+            "format": ".1%"
+          }
+        ]
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.year == 2021 || (width >= 650 && datum.year == 2025)"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "fontSize": 10
+      },
+      "encoding": {
+        "x": {
+          "field": "fy",
+          "type": "ordinal",
+          "sort": "ascending"
+        },
+        "y": {
+          "field": "airport",
+          "type": "nominal",
+          "sort": [
+            "Sydney",
+            "Melbourne",
+            "Brisbane",
+            "Perth",
+            "Adelaide",
+            "Gold Coast",
+            "Cairns",
+            "Canberra",
+            "Darwin",
+            "Hobart",
+            "Townsville"
+          ]
+        },
+        "text": {
+          "field": "index",
+          "type": "quantitative",
+          "format": ".0%"
+        },
+        "color": {
+          "condition": {
+            "test": "datum.index > 0.8",
+            "value": "#fff"
+          },
+          "value": "#193c52"
+        }
+      }
+    }
+  ]
+}

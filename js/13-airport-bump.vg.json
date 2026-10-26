@@ -1,0 +1,251 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": "container",
+  "height": 420,
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
+  "config": {
+    "background": "transparent",
+    "font": "Arial",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelColor": "#516b79",
+      "titleColor": "#193c52",
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titlePadding": 12,
+      "gridColor": "#e3ecef",
+      "domain": false,
+      "tickColor": "#e3ecef",
+      "labelPadding": 6
+    },
+    "legend": {
+      "labelColor": "#516b79",
+      "titleColor": "#193c52",
+      "labelFontSize": 11,
+      "titleFontSize": 12,
+      "titlePadding": 8,
+      "titleLimit": 450,
+      "labelLimit": 200,
+      "padding": 10,
+      "orient": "bottom"
+    },
+    "title": {
+      "anchor": "start",
+      "fontSize": 15,
+      "color": "#193c52",
+      "fontWeight": 600
+    },
+    "text": {
+      "font": "Arial",
+      "color": "#193c52"
+    }
+  },
+  "padding": {
+    "left": 5,
+    "right": 110,
+    "top": 12,
+    "bottom": 5
+  },
+  "data": {
+    "url": "data/airport_history.json"
+  },
+  "params": [
+    {
+      "name": "RankAirport",
+      "value": "All airports",
+      "bind": {
+        "input": "select",
+        "name": "Highlight airport: ",
+        "options": [
+          "All airports",
+          "Sydney",
+          "Melbourne",
+          "Brisbane",
+          "Perth",
+          "Adelaide",
+          "Cairns",
+          "Darwin",
+          "Hobart",
+          "Gold Coast",
+          "Canberra",
+          "Townsville"
+        ]
+      }
+    }
+  ],
+  "transform": [
+    {
+      "filter": "datum.year >= 2019"
+    },
+    {
+      "window": [
+        {
+          "op": "rank",
+          "as": "traffic_rank"
+        }
+      ],
+      "sort": [
+        {
+          "field": "passengers",
+          "order": "descending"
+        }
+      ],
+      "groupby": [
+        "year"
+      ]
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "quantitative",
+      "title": "Financial year ending June",
+      "scale": {
+        "domain": [
+          2019,
+          2025
+        ],
+        "zero": false
+      },
+      "axis": {
+        "format": "d",
+        "values": [
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ]
+      }
+    },
+    "y": {
+      "field": "traffic_rank",
+      "type": "quantitative",
+      "title": "Passenger rank among these 11 airports",
+      "scale": {
+        "domain": [
+          11.5,
+          0.5
+        ],
+        "zero": false
+      },
+      "axis": {
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "format": "d"
+      }
+    },
+    "detail": {
+      "field": "airport"
+    },
+    "color": {
+      "field": "airport",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Sydney",
+          "Melbourne",
+          "Brisbane",
+          "Perth",
+          "Adelaide",
+          "Gold Coast",
+          "Cairns",
+          "Canberra",
+          "Hobart",
+          "Darwin",
+          "Townsville"
+        ],
+        "range": [
+          "#2458a8",
+          "#6553a4",
+          "#a04459",
+          "#13766e",
+          "#8f5d20",
+          "#72528e",
+          "#247586",
+          "#526b38",
+          "#a55125",
+          "#35475c",
+          "#665f58"
+        ]
+      },
+      "legend": null
+    },
+    "opacity": {
+      "condition": {
+        "test": "RankAirport == 'All airports' || datum.airport == RankAirport",
+        "value": 1
+      },
+      "value": 0.12
+    },
+    "tooltip": [
+      {
+        "field": "airport",
+        "title": "Airport"
+      },
+      {
+        "field": "fy",
+        "title": "Financial year"
+      },
+      {
+        "field": "traffic_rank",
+        "title": "Rank among these airports",
+        "format": "d"
+      },
+      {
+        "field": "passengers",
+        "title": "Domestic + international movements",
+        "format": ","
+      }
+    ]
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.7,
+        "point": {
+          "filled": true,
+          "size": 42
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.year == 2025"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 10,
+        "fontSize": 11,
+        "fontWeight": 600
+      },
+      "encoding": {
+        "text": {
+          "field": "airport"
+        }
+      }
+    }
+  ]
+}

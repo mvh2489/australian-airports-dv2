@@ -1,0 +1,285 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": "container",
+  "height": 550,
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
+  "config": {
+    "background": "transparent",
+    "font": "Arial",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelColor": "#516b79",
+      "titleColor": "#193c52",
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titlePadding": 12,
+      "gridColor": "#e3ecef",
+      "domain": false,
+      "tickColor": "#e3ecef",
+      "labelPadding": 6
+    },
+    "legend": {
+      "labelColor": "#516b79",
+      "titleColor": "#193c52",
+      "labelFontSize": 11,
+      "titleFontSize": 12,
+      "titlePadding": 8,
+      "titleLimit": 450,
+      "labelLimit": 200,
+      "padding": 10,
+      "orient": "bottom"
+    },
+    "title": {
+      "anchor": "start",
+      "fontSize": 15,
+      "color": "#193c52",
+      "fontWeight": 600
+    },
+    "text": {
+      "font": "Arial",
+      "color": "#193c52"
+    }
+  },
+  "projection": {
+    "type": "albers",
+    "rotate": [
+      -134,
+      0,
+      0
+    ],
+    "center": [
+      0,
+      -27
+    ],
+    "parallels": [
+      -18,
+      -36
+    ]
+  },
+  "params": [
+    {
+      "name": "Year",
+      "value": 2026,
+      "bind": {
+        "input": "select",
+        "options": [
+          2025,
+          2026
+        ],
+        "labels": [
+          "2024-25",
+          "2025-26"
+        ],
+        "name": "Financial year: "
+      }
+    }
+  ],
+  "layer": [
+    {
+      "data": {
+        "url": "data/australia.geojson",
+        "format": {
+          "type": "json",
+          "property": "features"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#eaf0fa",
+        "stroke": "#fff",
+        "strokeWidth": 1.5
+      }
+    },
+    {
+      "data": {
+        "url": "data/airports.json"
+      },
+      "transform": [
+        {
+          "filter": "datum.year == Year"
+        }
+      ],
+      "mark": {
+        "type": "circle",
+        "color": "#2678a8",
+        "opacity": 0.62,
+        "stroke": "#fff",
+        "strokeWidth": 0.8
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "size": {
+          "field": "passengers",
+          "type": "quantitative",
+          "title": "Passenger movements",
+          "scale": {
+            "type": "linear",
+            "domain": [
+              0,
+              26000000
+            ],
+            "range": [
+              0,
+              2800
+            ]
+          },
+          "legend": {
+            "values": [
+              1000000,
+              5000000,
+              10000000,
+              25000000
+            ],
+            "format": ".2s",
+            "direction": "horizontal"
+          }
+        },
+        "order": {
+          "field": "passengers",
+          "sort": "descending"
+        },
+        "tooltip": [
+          {
+            "field": "airport",
+            "type": "nominal",
+            "title": "Airport"
+          },
+          {
+            "field": "fy",
+            "type": "nominal",
+            "title": "Financial year"
+          },
+          {
+            "field": "passengers",
+            "type": "quantitative",
+            "title": "Domestic passenger movements",
+            "format": ","
+          },
+          {
+            "field": "change",
+            "type": "quantitative",
+            "title": "2025-26 vs 2024-25",
+            "format": "+.1%"
+          },
+          {
+            "field": "national_share",
+            "type": "quantitative",
+            "title": "Share of national movements",
+            "format": ".1%"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "airport": "Sydney",
+            "iata": "SYD",
+            "state": "NSW",
+            "lat": -33.9461,
+            "lon": 151.177,
+            "location_name": "Sydney Kingsford Smith International Airport",
+            "ident": "YSSY"
+          },
+          {
+            "airport": "Melbourne",
+            "iata": "MEL",
+            "state": "VIC",
+            "lat": -37.67073,
+            "lon": 144.8379,
+            "location_name": "Melbourne Airport",
+            "ident": "YMML"
+          },
+          {
+            "airport": "Brisbane",
+            "iata": "BNE",
+            "state": "QLD",
+            "lat": -27.3842,
+            "lon": 153.117,
+            "location_name": "Brisbane International Airport",
+            "ident": "YBBN"
+          },
+          {
+            "airport": "Perth",
+            "iata": "PER",
+            "state": "WA",
+            "lat": -31.9403,
+            "lon": 115.967,
+            "location_name": "Perth International Airport",
+            "ident": "YPPH"
+          },
+          {
+            "airport": "Adelaide",
+            "iata": "ADL",
+            "state": "SA",
+            "lat": -34.94751,
+            "lon": 138.53339,
+            "location_name": "Adelaide International Airport",
+            "ident": "YPAD"
+          },
+          {
+            "airport": "Cairns",
+            "iata": "CNS",
+            "state": "QLD",
+            "lat": -16.87892,
+            "lon": 145.74948,
+            "location_name": "Cairns International Airport",
+            "ident": "YBCS"
+          },
+          {
+            "airport": "Hobart",
+            "iata": "HBA",
+            "state": "TAS",
+            "lat": -42.83703,
+            "lon": 147.51302,
+            "location_name": "Hobart International Airport",
+            "ident": "YMHB"
+          },
+          {
+            "airport": "Darwin",
+            "iata": "DRW",
+            "state": "NT",
+            "lat": -12.41497,
+            "lon": 130.88185,
+            "location_name": "Darwin International Airport / RAAF Darwin",
+            "ident": "YPDN"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 10,
+        "dy": -9,
+        "fontSize": 12,
+        "fontWeight": 600
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "airport"
+        }
+      }
+    }
+  ]
+}

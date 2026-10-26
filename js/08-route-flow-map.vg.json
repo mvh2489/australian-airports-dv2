@@ -1,0 +1,455 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "description": "Two-way domestic connections. Traffic is combined across both directions; arrowheads do not encode directional counts.",
+  "width": 740,
+  "height": 530,
+  "padding": 5,
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
+  "background": "transparent",
+  "signals": [
+    {
+      "name": "Hub",
+      "value": "All airports",
+      "bind": {
+        "input": "select",
+        "name": "Routes connected to: ",
+        "options": [
+          "All airports",
+          "Sydney",
+          "Melbourne",
+          "Brisbane",
+          "Perth",
+          "Adelaide",
+          "Cairns",
+          "Canberra",
+          "Darwin",
+          "Hobart"
+        ]
+      }
+    },
+    {
+      "name": "RouteLimit",
+      "value": 15,
+      "bind": {
+        "input": "range",
+        "min": 5,
+        "max": 62,
+        "step": 1,
+        "name": "Maximum routes: "
+      }
+    },
+    {
+      "name": "ShowArrows",
+      "value": true,
+      "bind": {
+        "input": "checkbox",
+        "name": "Show two-way arrows: "
+      }
+    }
+  ],
+  "data": [
+    {
+      "name": "land",
+      "url": "data/australia.geojson",
+      "format": {
+        "type": "json",
+        "property": "features"
+      }
+    },
+    {
+      "name": "routes",
+      "url": "data/route_arrows.json"
+    },
+    {
+      "name": "visible",
+      "source": "routes",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "Hub == 'All airports' || datum.origin == Hub || datum.destination == Hub"
+        },
+        {
+          "type": "window",
+          "sort": {
+            "field": [
+              "passengers"
+            ],
+            "order": [
+              "descending"
+            ]
+          },
+          "ops": [
+            "row_number"
+          ],
+          "as": [
+            "visible_rank"
+          ]
+        },
+        {
+          "type": "filter",
+          "expr": "datum.visible_rank <= RouteLimit"
+        }
+      ]
+    },
+    {
+      "name": "arrows",
+      "source": "visible",
+      "transform": [
+        {
+          "type": "fold",
+          "fields": [
+            "arrowA",
+            "arrowB"
+          ],
+          "as": [
+            "direction",
+            "coord"
+          ]
+        },
+        {
+          "type": "formula",
+          "expr": "datum.direction == 'arrowA' ? datum.aheadA : datum.aheadB",
+          "as": "ahead"
+        },
+        {
+          "type": "geopoint",
+          "projection": "mapProjection",
+          "fields": [
+            "coord[0]",
+            "coord[1]"
+          ],
+          "as": [
+            "px",
+            "py"
+          ]
+        },
+        {
+          "type": "geopoint",
+          "projection": "mapProjection",
+          "fields": [
+            "ahead[0]",
+            "ahead[1]"
+          ],
+          "as": [
+            "ax",
+            "ay"
+          ]
+        },
+        {
+          "type": "formula",
+          "expr": "atan2(datum.ax-datum.px, datum.py-datum.ay)*180/PI",
+          "as": "angle"
+        }
+      ]
+    },
+    {
+      "name": "airports",
+      "values": [
+        {
+          "airport": "Sydney",
+          "iata": "SYD",
+          "state": "NSW",
+          "lat": -33.9461,
+          "lon": 151.177,
+          "location_name": "Sydney Kingsford Smith International Airport",
+          "ident": "YSSY"
+        },
+        {
+          "airport": "Melbourne",
+          "iata": "MEL",
+          "state": "VIC",
+          "lat": -37.67073,
+          "lon": 144.8379,
+          "location_name": "Melbourne Airport",
+          "ident": "YMML"
+        },
+        {
+          "airport": "Brisbane",
+          "iata": "BNE",
+          "state": "QLD",
+          "lat": -27.3842,
+          "lon": 153.117,
+          "location_name": "Brisbane International Airport",
+          "ident": "YBBN"
+        },
+        {
+          "airport": "Perth",
+          "iata": "PER",
+          "state": "WA",
+          "lat": -31.9403,
+          "lon": 115.967,
+          "location_name": "Perth International Airport",
+          "ident": "YPPH"
+        },
+        {
+          "airport": "Adelaide",
+          "iata": "ADL",
+          "state": "SA",
+          "lat": -34.94751,
+          "lon": 138.53339,
+          "location_name": "Adelaide International Airport",
+          "ident": "YPAD"
+        },
+        {
+          "airport": "Cairns",
+          "iata": "CNS",
+          "state": "QLD",
+          "lat": -16.87892,
+          "lon": 145.74948,
+          "location_name": "Cairns International Airport",
+          "ident": "YBCS"
+        },
+        {
+          "airport": "Hobart",
+          "iata": "HBA",
+          "state": "TAS",
+          "lat": -42.83703,
+          "lon": 147.51302,
+          "location_name": "Hobart International Airport",
+          "ident": "YMHB"
+        },
+        {
+          "airport": "Darwin",
+          "iata": "DRW",
+          "state": "NT",
+          "lat": -12.41497,
+          "lon": 130.88185,
+          "location_name": "Darwin International Airport / RAAF Darwin",
+          "ident": "YPDN"
+        }
+      ],
+      "transform": [
+        {
+          "type": "geopoint",
+          "projection": "mapProjection",
+          "fields": [
+            "lon",
+            "lat"
+          ],
+          "as": [
+            "x",
+            "y"
+          ]
+        }
+      ]
+    }
+  ],
+  "projections": [
+    {
+      "name": "mapProjection",
+      "type": "albers",
+      "rotate": [
+        -134,
+        0,
+        0
+      ],
+      "center": [
+        0,
+        -27
+      ],
+      "parallels": [
+        -18,
+        -36
+      ],
+      "fit": {
+        "signal": "data('land')"
+      },
+      "size": {
+        "signal": "[width, max(260,height-65)]"
+      }
+    }
+  ],
+  "scales": [
+    {
+      "name": "traffic",
+      "type": "linear",
+      "domain": [
+        0,
+        8100000
+      ],
+      "range": [
+        0.7,
+        8.5
+      ],
+      "zero": true
+    }
+  ],
+  "legends": [
+    {
+      "strokeWidth": "traffic",
+      "title": "Trips (both directions)",
+      "titleLimit": 280,
+      "orient": "bottom",
+      "direction": "horizontal",
+      "format": ".2s",
+      "values": [
+        1000000,
+        4000000,
+        8000000
+      ],
+      "symbolType": "stroke",
+      "symbolStrokeColor": "#2678a8",
+      "symbolSize": 400,
+      "labelColor": "#516b79",
+      "titleColor": "#193c52",
+      "titlePadding": 10
+    }
+  ],
+  "marks": [
+    {
+      "type": "shape",
+      "from": {
+        "data": "land"
+      },
+      "transform": [
+        {
+          "type": "geoshape",
+          "projection": "mapProjection"
+        }
+      ],
+      "encode": {
+        "update": {
+          "fill": {
+            "value": "#eaf0fa"
+          },
+          "stroke": {
+            "value": "#fff"
+          },
+          "strokeWidth": {
+            "value": 1.5
+          }
+        }
+      }
+    },
+    {
+      "type": "shape",
+      "from": {
+        "data": "visible"
+      },
+      "transform": [
+        {
+          "type": "geoshape",
+          "projection": "mapProjection",
+          "field": "datum.geometry"
+        }
+      ],
+      "encode": {
+        "update": {
+          "stroke": {
+            "value": "#2678a8"
+          },
+          "strokeWidth": {
+            "scale": "traffic",
+            "field": "passengers"
+          },
+          "strokeOpacity": {
+            "value": 0.58
+          },
+          "fill": {
+            "value": null
+          },
+          "tooltip": {
+            "signal": "{'Route':datum.route,'Passenger trips (both directions)':format(datum.passengers,','),'Aircraft trips (including cargo)':format(datum.flights,','),'Seat utilisation':format(datum.load_factor,'.1%')}"
+          }
+        },
+        "hover": {
+          "strokeOpacity": {
+            "value": 1
+          }
+        }
+      }
+    },
+    {
+      "type": "symbol",
+      "from": {
+        "data": "arrows"
+      },
+      "encode": {
+        "update": {
+          "x": {
+            "field": "px"
+          },
+          "y": {
+            "field": "py"
+          },
+          "shape": {
+            "value": "triangle-up"
+          },
+          "angle": {
+            "field": "angle"
+          },
+          "size": {
+            "value": 60
+          },
+          "fill": {
+            "value": "#225578"
+          },
+          "opacity": {
+            "signal": "ShowArrows ? 1 : 0"
+          },
+          "tooltip": {
+            "signal": "{'Route':datum.route,'Passenger trips (both directions)':format(datum.passengers,','),'Aircraft trips (including cargo)':format(datum.flights,','),'Seat utilisation':format(datum.load_factor,'.1%')}"
+          }
+        }
+      }
+    },
+    {
+      "type": "symbol",
+      "from": {
+        "data": "airports"
+      },
+      "encode": {
+        "update": {
+          "x": {
+            "field": "x"
+          },
+          "y": {
+            "field": "y"
+          },
+          "size": {
+            "value": 24
+          },
+          "fill": {
+            "value": "#225578"
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {
+        "data": "airports"
+      },
+      "encode": {
+        "update": {
+          "x": {
+            "field": "x",
+            "offset": 9
+          },
+          "y": {
+            "field": "y",
+            "offset": -9
+          },
+          "text": {
+            "field": "airport"
+          },
+          "font": {
+            "value": "Arial"
+          },
+          "fontSize": {
+            "value": 12
+          },
+          "fontWeight": {
+            "value": 600
+          },
+          "fill": {
+            "value": "#193c52"
+          }
+        }
+      }
+    }
+  ]
+}

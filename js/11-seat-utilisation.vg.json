@@ -1,0 +1,148 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": "container",
+  "height": 400,
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
+  "config": {
+    "background": "transparent",
+    "font": "Arial",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelColor": "#516b79",
+      "titleColor": "#193c52",
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titlePadding": 12,
+      "gridColor": "#e3ecef",
+      "domain": false,
+      "tickColor": "#e3ecef",
+      "labelPadding": 6
+    },
+    "legend": {
+      "labelColor": "#516b79",
+      "titleColor": "#193c52",
+      "labelFontSize": 11,
+      "titleFontSize": 12,
+      "titlePadding": 8,
+      "titleLimit": 450,
+      "labelLimit": 200,
+      "padding": 10,
+      "orient": "bottom"
+    },
+    "title": {
+      "anchor": "start",
+      "fontSize": 15,
+      "color": "#193c52",
+      "fontWeight": 600
+    },
+    "text": {
+      "font": "Arial",
+      "color": "#193c52"
+    }
+  },
+  "data": {
+    "url": "data/routes.json"
+  },
+  "transform": [
+    {
+      "filter": "datum.year == 2026 && datum.rank <= 12"
+    },
+    {
+      "calculate": "1 - datum.load_factor",
+      "as": "unoccupied"
+    },
+    {
+      "fold": [
+        "load_factor",
+        "unoccupied"
+      ],
+      "as": [
+        "status",
+        "proportion"
+      ]
+    }
+  ],
+  "mark": {
+    "type": "bar",
+    "size": 19
+  },
+  "encoding": {
+    "x": {
+      "field": "proportion",
+      "type": "quantitative",
+      "stack": "zero",
+      "title": "Share of available seats",
+      "scale": {
+        "domain": [
+          0,
+          1
+        ]
+      },
+      "axis": {
+        "format": ".0%",
+        "tickCount": 5
+      }
+    },
+    "y": {
+      "field": "route",
+      "type": "nominal",
+      "title": null,
+      "sort": {
+        "field": "passengers",
+        "order": "descending"
+      },
+      "axis": {
+        "labelLimit": 230,
+        "labelFontSize": 11
+      }
+    },
+    "color": {
+      "field": "status",
+      "type": "nominal",
+      "title": null,
+      "scale": {
+        "domain": [
+          "load_factor",
+          "unoccupied"
+        ],
+        "range": [
+          "#2678a8",
+          "#e4eaf5"
+        ]
+      },
+      "legend": {
+        "labelExpr": "datum.label == 'load_factor' ? 'Occupied seats' : 'Unoccupied seats'"
+      }
+    },
+    "order": {
+      "field": "status",
+      "sort": "ascending"
+    },
+    "tooltip": [
+      {
+        "field": "route",
+        "title": "Route"
+      },
+      {
+        "field": "load_factor",
+        "title": "Published seat utilisation",
+        "format": ".1%"
+      },
+      {
+        "field": "passengers",
+        "title": "Passenger trips",
+        "format": ","
+      },
+      {
+        "field": "seats",
+        "title": "Available seats",
+        "format": ","
+      }
+    ]
+  }
+}

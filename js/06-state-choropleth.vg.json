@@ -1,0 +1,294 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": "container",
+  "height": 530,
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
+  "config": {
+    "background": "transparent",
+    "font": "Arial",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelColor": "#516b79",
+      "titleColor": "#193c52",
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titlePadding": 12,
+      "gridColor": "#e3ecef",
+      "domain": false,
+      "tickColor": "#e3ecef",
+      "labelPadding": 6
+    },
+    "legend": {
+      "labelColor": "#516b79",
+      "titleColor": "#193c52",
+      "labelFontSize": 11,
+      "titleFontSize": 12,
+      "titlePadding": 8,
+      "titleLimit": 450,
+      "labelLimit": 200,
+      "padding": 10,
+      "orient": "bottom"
+    },
+    "title": {
+      "anchor": "start",
+      "fontSize": 15,
+      "color": "#193c52",
+      "fontWeight": 600
+    },
+    "text": {
+      "font": "Arial",
+      "color": "#193c52"
+    }
+  },
+  "projection": {
+    "type": "albers",
+    "rotate": [
+      -134,
+      0,
+      0
+    ],
+    "center": [
+      0,
+      -27
+    ],
+    "parallels": [
+      -18,
+      -36
+    ]
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "data/australia.geojson",
+        "format": {
+          "type": "json",
+          "property": "features"
+        }
+      },
+      "transform": [
+        {
+          "lookup": "properties.state",
+          "from": {
+            "data": {
+              "url": "data/state_traffic.json"
+            },
+            "key": "state",
+            "fields": [
+              "passengers",
+              "population",
+              "per_resident",
+              "airport_count",
+              "state_name"
+            ]
+          }
+        }
+      ],
+      "mark": {
+        "type": "geoshape",
+        "stroke": "#fff",
+        "strokeWidth": 2
+      },
+      "encoding": {
+        "color": {
+          "field": "per_resident",
+          "type": "quantitative",
+          "title": "Movements per resident",
+          "scale": {
+            "domain": [
+              0,
+              10
+            ],
+            "range": [
+              "#eaf1ff",
+              "#174b9e"
+            ]
+          },
+          "legend": {
+            "gradientLength": 260,
+            "values": [
+              0,
+              2,
+              4,
+              6,
+              8,
+              10
+            ]
+          }
+        },
+        "tooltip": [
+          {
+            "field": "state_name",
+            "title": "State / territory"
+          },
+          {
+            "field": "per_resident",
+            "title": "Selected airport movements per resident",
+            "format": ".2f"
+          },
+          {
+            "field": "passengers",
+            "title": "Domestic movements, 2025-26",
+            "format": ","
+          },
+          {
+            "field": "population",
+            "title": "ABS population, Dec 2025",
+            "format": ","
+          },
+          {
+            "field": "airport_count",
+            "title": "Airports included"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "state": "WA",
+            "lon": 121,
+            "lat": -26
+          },
+          {
+            "state": "NT",
+            "lon": 133,
+            "lat": -20
+          },
+          {
+            "state": "SA",
+            "lon": 135,
+            "lat": -30
+          },
+          {
+            "state": "QLD",
+            "lon": 144,
+            "lat": -23
+          },
+          {
+            "state": "NSW",
+            "lon": 147,
+            "lat": -32
+          },
+          {
+            "state": "VIC",
+            "lon": 144,
+            "lat": -36.5
+          },
+          {
+            "state": "TAS",
+            "lon": 146.5,
+            "lat": -42.4
+          }
+        ]
+      },
+      "transform": [
+        {
+          "lookup": "state",
+          "from": {
+            "data": {
+              "url": "data/state_traffic.json"
+            },
+            "key": "state",
+            "fields": [
+              "per_resident"
+            ]
+          }
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "fontSize": 13,
+        "fontWeight": 600
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "state"
+        },
+        "color": {
+          "condition": {
+            "test": "datum.per_resident > 7",
+            "value": "#fff"
+          },
+          "value": "#193c52"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "lon": 149.13,
+            "lat": -35.3,
+            "lon2": 154,
+            "lat2": -37.5
+          }
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "stroke": "#225578",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon"
+        },
+        "latitude": {
+          "field": "lat"
+        },
+        "longitude2": {
+          "field": "lon2"
+        },
+        "latitude2": {
+          "field": "lat2"
+        }
+      }
+    },
+    {
+      "data": {
+        "url": "data/state_traffic.json"
+      },
+      "transform": [
+        {
+          "filter": "datum.state == 'ACT'"
+        },
+        {
+          "calculate": "'ACT: ' + format(datum.per_resident, '.1f')",
+          "as": "label"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "fontSize": 12,
+        "fontWeight": 600,
+        "color": "#193c52"
+      },
+      "encoding": {
+        "longitude": {
+          "datum": 154
+        },
+        "latitude": {
+          "datum": -37.5
+        },
+        "text": {
+          "field": "label"
+        }
+      }
+    }
+  ]
+}

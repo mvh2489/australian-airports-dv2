@@ -1,0 +1,206 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": "container",
+  "height": 375,
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
+  "config": {
+    "background": "transparent",
+    "font": "Arial",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelColor": "#516b79",
+      "titleColor": "#193c52",
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titlePadding": 12,
+      "gridColor": "#e3ecef",
+      "domain": false,
+      "tickColor": "#e3ecef",
+      "labelPadding": 6
+    },
+    "legend": {
+      "labelColor": "#516b79",
+      "titleColor": "#193c52",
+      "labelFontSize": 11,
+      "titleFontSize": 12,
+      "titlePadding": 8,
+      "titleLimit": 450,
+      "labelLimit": 200,
+      "padding": 10,
+      "orient": "bottom"
+    },
+    "title": {
+      "anchor": "start",
+      "fontSize": 15,
+      "color": "#193c52",
+      "fontWeight": 600
+    },
+    "text": {
+      "font": "Arial",
+      "color": "#193c52"
+    }
+  },
+  "data": {
+    "url": "data/airports.json"
+  },
+  "transform": [
+    {
+      "filter": "datum.year == 2026 && datum.rank <= 12"
+    }
+  ],
+  "layer": [
+    {
+      "mark": {
+        "type": "rule",
+        "color": "#a8c1f7",
+        "strokeWidth": 3
+      },
+      "encoding": {
+        "y": {
+          "field": "airport",
+          "type": "nominal",
+          "sort": {
+            "field": "passengers",
+            "order": "descending",
+            "op": "max"
+          },
+          "title": null,
+          "axis": {
+            "labelLimit": 145
+          }
+        },
+        "x": {
+          "field": "passengers",
+          "type": "quantitative",
+          "title": "Domestic passenger movements (2025-26)",
+          "axis": {
+            "format": ".2s",
+            "tickCount": 5
+          },
+          "scale": {
+            "domain": [
+              0,
+              29000000
+            ]
+          }
+        },
+        "tooltip": [
+          {
+            "field": "airport",
+            "type": "nominal",
+            "title": "Airport"
+          },
+          {
+            "field": "fy",
+            "type": "nominal",
+            "title": "Financial year"
+          },
+          {
+            "field": "passengers",
+            "type": "quantitative",
+            "title": "Domestic passenger movements",
+            "format": ","
+          },
+          {
+            "field": "change",
+            "type": "quantitative",
+            "title": "2025-26 vs 2024-25",
+            "format": "+.1%"
+          },
+          {
+            "field": "national_share",
+            "type": "quantitative",
+            "title": "Share of national movements",
+            "format": ".1%"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "point",
+        "color": "#2678a8",
+        "filled": true,
+        "size": 75
+      },
+      "encoding": {
+        "y": {
+          "field": "airport",
+          "type": "nominal",
+          "sort": {
+            "field": "passengers",
+            "order": "descending",
+            "op": "max"
+          }
+        },
+        "x": {
+          "field": "passengers",
+          "type": "quantitative"
+        },
+        "tooltip": [
+          {
+            "field": "airport",
+            "type": "nominal",
+            "title": "Airport"
+          },
+          {
+            "field": "fy",
+            "type": "nominal",
+            "title": "Financial year"
+          },
+          {
+            "field": "passengers",
+            "type": "quantitative",
+            "title": "Domestic passenger movements",
+            "format": ","
+          },
+          {
+            "field": "change",
+            "type": "quantitative",
+            "title": "2025-26 vs 2024-25",
+            "format": "+.1%"
+          },
+          {
+            "field": "national_share",
+            "type": "quantitative",
+            "title": "Share of national movements",
+            "format": ".1%"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 9,
+        "fontSize": 11
+      },
+      "encoding": {
+        "y": {
+          "field": "airport",
+          "type": "nominal",
+          "sort": {
+            "field": "passengers",
+            "order": "descending",
+            "op": "max"
+          }
+        },
+        "x": {
+          "field": "passengers",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "passengers",
+          "type": "quantitative",
+          "format": ".3s"
+        }
+      }
+    }
+  ]
+}

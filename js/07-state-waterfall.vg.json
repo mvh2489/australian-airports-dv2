@@ -1,0 +1,150 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": "container",
+  "height": 350,
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
+  "config": {
+    "background": "transparent",
+    "font": "Arial",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelColor": "#516b79",
+      "titleColor": "#193c52",
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titlePadding": 12,
+      "gridColor": "#e3ecef",
+      "domain": false,
+      "tickColor": "#e3ecef",
+      "labelPadding": 6
+    },
+    "legend": {
+      "labelColor": "#516b79",
+      "titleColor": "#193c52",
+      "labelFontSize": 11,
+      "titleFontSize": 12,
+      "titlePadding": 8,
+      "titleLimit": 450,
+      "labelLimit": 200,
+      "padding": 10,
+      "orient": "bottom"
+    },
+    "title": {
+      "anchor": "start",
+      "fontSize": 15,
+      "color": "#193c52",
+      "fontWeight": 600
+    },
+    "text": {
+      "font": "Arial",
+      "color": "#193c52"
+    }
+  },
+  "data": {
+    "url": "data/waterfall.json"
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "size": 32
+      },
+      "encoding": {
+        "x": {
+          "field": "state",
+          "type": "ordinal",
+          "sort": {
+            "field": "order",
+            "order": "ascending"
+          },
+          "title": null,
+          "axis": {
+            "labelAngle": -25,
+            "labelFontSize": 11
+          }
+        },
+        "y": {
+          "field": "start",
+          "type": "quantitative",
+          "title": "Change in passenger movements",
+          "axis": {
+            "format": ".2s",
+            "tickCount": 5
+          },
+          "scale": {
+            "domain": [
+              0,
+              2900000
+            ]
+          }
+        },
+        "y2": {
+          "field": "end"
+        },
+        "color": {
+          "field": "kind",
+          "type": "nominal",
+          "title": null,
+          "scale": {
+            "domain": [
+              "Increase",
+              "Decrease",
+              "Total"
+            ],
+            "range": [
+              "#2678a8",
+              "#c4542f",
+              "#225578"
+            ]
+          }
+        },
+        "tooltip": [
+          {
+            "field": "state",
+            "title": "Contribution"
+          },
+          {
+            "field": "change",
+            "title": "Change in movements",
+            "format": "+,d"
+          }
+        ]
+      }
+    },
+    {
+      "transform": [
+        {
+          "calculate": "abs(datum.change) >= 100000 ? format(datum.change/1000000, '+.2f')+'m' : format(datum.change/1000, '+.0f')+'k'",
+          "as": "label"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "dy": -9,
+        "fontSize": 10
+      },
+      "encoding": {
+        "x": {
+          "field": "state",
+          "type": "ordinal",
+          "sort": {
+            "field": "order",
+            "order": "ascending"
+          }
+        },
+        "y": {
+          "field": "end",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "label"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,210 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "description": "Domestic passenger movements at 58 selected airports, grouped by state, 2025-26.",
+  "width": 900,
+  "height": 380,
+  "padding": 0,
+  "autosize": "none",
+  "data": [
+    {
+      "name": "tree",
+      "url": "data/treemap.json",
+      "transform": [
+        {
+          "type": "stratify",
+          "key": "id",
+          "parentKey": "parent"
+        },
+        {
+          "type": "treemap",
+          "field": "passengers",
+          "sort": {
+            "field": "value",
+            "order": "descending"
+          },
+          "method": "squarify",
+          "round": true,
+          "size": [
+            {
+              "signal": "width"
+            },
+            {
+              "signal": "height"
+            }
+          ],
+          "paddingInner": 3,
+          "paddingTop": 18
+        }
+      ]
+    },
+    {
+      "name": "leaves",
+      "source": "tree",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "!datum.children"
+        }
+      ]
+    },
+    {
+      "name": "states",
+      "source": "tree",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "datum.depth == 1"
+        }
+      ]
+    }
+  ],
+  "scales": [
+    {
+      "name": "colour",
+      "type": "ordinal",
+      "domain": [
+        "NSW",
+        "VIC",
+        "QLD",
+        "WA",
+        "SA",
+        "TAS",
+        "NT",
+        "ACT"
+      ],
+      "range": [
+        "#2458a8",
+        "#6553a4",
+        "#13766e",
+        "#9b542a",
+        "#a04459",
+        "#455c9d",
+        "#7c4b88",
+        "#566a34"
+      ]
+    }
+  ],
+  "marks": [
+    {
+      "type": "rect",
+      "from": {
+        "data": "leaves"
+      },
+      "encode": {
+        "enter": {
+          "x": {
+            "field": "x0"
+          },
+          "y": {
+            "field": "y0"
+          },
+          "x2": {
+            "field": "x1"
+          },
+          "y2": {
+            "field": "y1"
+          },
+          "fill": {
+            "scale": "colour",
+            "field": "state"
+          },
+          "fillOpacity": {
+            "value": 1
+          },
+          "tooltip": {
+            "signal": "{'Airport': datum.name, 'State': datum.state, 'Domestic movements': format(datum.passengers, ','), 'Share of selected airports': format(datum.share, '.1%')}"
+          }
+        },
+        "update": {
+          "stroke": {
+            "value": "#fff"
+          },
+          "strokeWidth": {
+            "value": 0.4
+          }
+        },
+        "hover": {
+          "fillOpacity": {
+            "value": 1
+          },
+          "stroke": {
+            "value": "#172e42"
+          },
+          "strokeWidth": {
+            "value": 2
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {
+        "data": "leaves"
+      },
+      "encode": {
+        "enter": {
+          "x": {
+            "signal": "(datum.x0 + datum.x1)/2"
+          },
+          "y": {
+            "signal": "(datum.y0 + datum.y1)/2"
+          },
+          "text": {
+            "field": "name"
+          },
+          "align": {
+            "value": "center"
+          },
+          "baseline": {
+            "value": "middle"
+          },
+          "font": {
+            "value": "Arial"
+          },
+          "fontSize": {
+            "value": 12
+          },
+          "fill": {
+            "value": "#fff"
+          },
+          "opacity": {
+            "signal": "datum.x1-datum.x0 > 95 && datum.y1-datum.y0 > 24 ? 1 : 0"
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {
+        "data": "states"
+      },
+      "encode": {
+        "enter": {
+          "x": {
+            "field": "x0",
+            "offset": 4
+          },
+          "y": {
+            "field": "y0",
+            "offset": 12
+          },
+          "text": {
+            "field": "name"
+          },
+          "font": {
+            "value": "Arial"
+          },
+          "fontSize": {
+            "value": 11
+          },
+          "fontWeight": {
+            "value": "bold"
+          },
+          "fill": {
+            "value": "#193c52"
+          }
+        }
+      }
+    }
+  ]
+}
